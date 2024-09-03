@@ -1,3 +1,7 @@
-head p, h1 {
-    color : magenta
+body h1 {
+    color: red;
+}
+
+p {
+    color: chartreuse;
 }
