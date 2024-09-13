@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    color: wheat;
+    line-height: 1.6;
+    background-color: #00001a;
+    margin: 2rem 1rem;
+    padding: 2px;
+}
+
+div {
+    display:-moz-grid-group;
+    image-resolution: 100px;
+}
+
+h1, h2 {
+    color: rgb(255, 0, 76);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: x-large;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 2%;
+    box-shadow: -18px 10px 10px rgba(0,0,0,0.8);
+
+}
+
+ul {
+text-align: center;
+padding: 0;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: green;
+    color:aliceblue;
+    border-radius:10px;
+}
+
+.class0 {
+    color: red;
+    font-size: 1.5rem;
+}
