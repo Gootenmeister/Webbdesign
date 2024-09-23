@@ -1,1 +1,28 @@
 /* försök inte ha så mycket i body om man inte ska skriva över det. */
+
+header {
+    background-image: linear-gradient(to bottom, rgba(125,179,191,1), rgba(125,179,191,0));
+    backdrop-filter: blur(2px);
+    padding: 0.5em;
+    text-align: right;
+    position: sticky;
+    height: 10vh;
+    top: 0;
+}
+#menu {
+    display: none;
+    list-style-type: none;
+}
+
+#menu-toggle:checked ~ #menu {
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+a:hover {
+    background-color: #D973AB;
+    text-align: left;
+}
