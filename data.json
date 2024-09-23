@@ -1,0 +1,67 @@
+{
+    "customers": [
+      {
+        "customerId": 1,
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "phone": "+46701234567",
+        "address": {
+          "street": "Main Street 1",
+          "city": "Stockholm",
+          "postalCode": "11122",
+          "country": "Sweden"
+        },
+        "orders": [
+          {
+            "orderId": 101,
+            "orderDate": "2024-09-20",
+            "totalAmount": 500,
+            "status": "Delivered",
+            "items": [
+              {
+                "productId": 1001,
+                "productName": "Wireless Headphones",
+                "quantity": 1,
+                "price": 300
+              },
+              {
+                "productId": 1002,
+                "productName": "Bluetooth Speaker",
+                "quantity": 1,
+                "price": 200
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "customerId": 2,
+        "name": "Jane Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+46709876543",
+        "address": {
+          "street": "Second Avenue 45",
+          "city": "Gothenburg",
+          "postalCode": "41309",
+          "country": "Sweden"
+        },
+        "orders": [
+          {
+            "orderId": 102,
+            "orderDate": "2024-09-19",
+            "totalAmount": 800,
+            "status": "Shipped",
+            "items": [
+              {
+                "productId": 1003,
+                "productName": "Smart Watch",
+                "quantity": 2,
+                "price": 400
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
