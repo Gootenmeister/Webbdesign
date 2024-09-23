@@ -1,7 +1,12 @@
 /* försök inte ha så mycket i body om man inte ska skriva över det. */
 
+body {
+    background-color: #00001a;
+    color: white;
+}
+
 header {
-   background-color: azure;
+    color: bisque;
     backdrop-filter: blur(2px);
     padding: 1rem;
     text-align: right;
@@ -33,7 +38,7 @@ header {
     display: none;
 }
 a{
-    color: black;
+    color: bisque;
 }
 a:hover {
     background-color: #D973AB;
