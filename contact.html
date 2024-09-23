@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+<body>
+
+    <div class="contactContainer">
+        <h1>Kontakta oss</h1>
+        <form action="#" method="post">
+            <label for="issue">Välj ärende:*</label>
+            <select id="issue" name="issue" required>
+                <option value="">--Välj ett ärende--</option>
+                <option value="support">IT-support</option>
+                <option value="sales">Köp</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Övrigt</option>
+            </select>
+
+            <label for="name">Namn:*</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-post:*</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Meddelande:*</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </div>
+    
+</body>
+</html>

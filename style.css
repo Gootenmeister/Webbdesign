@@ -9,6 +9,18 @@ header {
     height: 10vh;
     top: 0;
 }
+
+#contact-header {
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
+
+}
+
+.contactContainer {
+    display: grid;
+}
+
 #menu {
     display: none;
     list-style-type: none;
