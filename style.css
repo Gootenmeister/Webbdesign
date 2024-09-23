@@ -1,6 +1,6 @@
 /* försök inte ha så mycket i body om man inte ska skriva över det. */
 
-header {
+#header {
     background-image: linear-gradient(to bottom, rgba(125,179,191,1), rgba(125,179,191,0));
     backdrop-filter: blur(2px);
     padding: 0.5em;
