@@ -134,3 +134,31 @@ grid-template-columns: repeat(3,1fr);
     text-align: center;
     color: black;
 }
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .card-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-image img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-details {
+    font-size: 1em;
+  }
