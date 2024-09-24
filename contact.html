@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
 </head>
+<div class="root">
 <body>
-
     <div class="contactContainer">
         <h1>Kontakta oss</h1>
-        <form action="#" method="post">
+        <form method="post">
             <label for="issue">Välj ärende:*</label>
             <select id="issue" name="issue" required>
                 <option value="">--Välj ett ärende--</option>
@@ -43,10 +43,11 @@
             <div class="formItem formMessage">
                 <label for="message">Meddelande:*</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
+                <p id="msg-feedback" class="error"></p>
             </div>
 
-            <button type="submit">Skicka</button>
         </form>
+        <button id="contactFormSend">alert</button>
     </div>
     
     <footer>
@@ -54,6 +55,6 @@
             <button>Tillbaka</button>
         </form>
     </footer>
-
+</div>
 </body>
 </html>
