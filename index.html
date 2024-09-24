@@ -11,123 +11,136 @@
     <title>ForetagNamnHär</title>
 </head>
 <!-- Fixa divvar, idn, klasser och fullt fungerande, validerande htmlkod innan JSinjektion -->
+
 <body>
-   
-    <header>
-        <label for="menu-toggle" id="menuIcon">&#9776;</label>
-        <input type="checkbox" id="menu-toggle">
-        <ul id="menu">
-            <li><a href="#OmOss">Om Oss</a></li>
-            <li>Projekt</li>
-            <li><a href="#Kontakt">Kontakt</a></li>
-        </ul>
-    </header>
-    <h2 class="rub1"> Bästa Speldatorer</h2>
-    <img id="header-img" src="SharkSeries.png" alt="SharkSeries">
-<div class="container">
-<img src="aquarium_pro.png" alt="PC-image">
-<img src="corsair4000dmig.png" alt="PC-image">
-<img src="fractal_design_2.png" alt="PC-image">
-<img src="fractal_design.png" alt="PC-image">
-<img src="tsunami_pro.webp" alt="PC-image">
-<img src="nzxth5flow6.png" alt="PC-image">
-</div>
-
-<div class="gridContainer">
-<div class="items item1">
-<img src="aquarium_pro.png" alt="aquarium_pro">
-    <div class="card-title">SILENT PREDATOR SPELDATOR</div>
-    <div class="card-details">
-      <ul>
-        <li>AMD Ryzen™™ 7 5700X 8 x 3.4/4.6 GHz</li>
-        <li>AMD Radeon™ RX 7600 XT 16GB</li>
-        <li>16GB 3200MHz DDR4 RAM</li>
-        <li>1000GB SSD M.2 NVMe</li>
-        <li>Windows 11 Home</li>
-      </ul>
-    </div>
-</div>
-<div class="items item2"><img src="corsair4000dmig.png" alt="PC-image"> 
-    <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
-    <div class="card-details">
-      <ul>
-        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
-        <li>AMD Radeon RX 7700 XT 12GB</li>
-        <li>16GB 6000MHz DDR5 RAM</li>
-        <li>1000GB SSD M.2 NVMe</li>
-        <li>Windows 11 Home</li>
-      </ul>
-    </div>
-</div>
-<div class="items item3"><img src="fractal_design_2.png" alt="PC-image">
-<div class="card-title">SHARK BLOODLUST SPELDATOR</div>
-<div class="card-details">
-  <ul> <li>Intel Core i5-13400F 6p x 2.5/4.6 GHz</li>
-    <li>Nvidia GeForce RTX 4060 8GB</li>
-    <li>16GB 3200MHz DDR4 RAM</li>
-    <li>1000GB SSD M.2 NVMe</li>
-    <li>Windows 11 Home</li>
-  </ul>
-</div>
-</div>
-<div class="luft"> &nbsp;</div>
-<div class="items item4"><img src="fractal_design.png" alt="PC-image">
-    <div class="card-title">SHARK BOOST GAMING PC</div>
-    <div class="card-details">
-      <ul>
-        <li>AMD Ryzen 9 7700 8 x 3.8/5.3 GHz</li>
-        <li>AMD Radeon RX 7700 XT 12GB</li>
-        <li>16GB 6000MHz DDR5 RAM</li>
-        <li>1000GB SSD M.2 NVMe</li>
-        <li>Windows 10 Home</li>
-      </ul>
-    </div></div>
-<div class="items item5"><img src="tsunami_pro.webp" alt="PC-image">
-    <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
-    <div class="card-details">
-      <ul>
-        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
-        <li>AMD Radeon RX 7700 XT 12GB</li>
-        <li>16GB 6000MHz DDR5 RAM</li>
-        <li>1000GB SSD M.2 NVMe</li>
-        <li>Windows 11 Home</li>
-      </ul>
-    </div></div>
-<div class="items item6"><img src="nzxth5flow6.png" alt="PC-image">
-    <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
-    <div class="card-details">
-      <ul>
-        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
-        <li>AMD Radeon RX 7700 XT 12GB</li>
-        <li>16GB 6000MHz DDR5 RAM</li>
-        <li>1000GB SSD M.2 NVMe</li>
-        <li>Windows 11 Home</li>
-      </ul>
-    </div></div>
-
-</div>
-    
-        <div id="anstallda">
-          <h2 id="OmOss"> Om oss</h2>
-            <a href="page1.html" class="circle">G</a>
-  <a href="page2.html" class="circle">R</a>
-  <a href="page3.html" class="circle">A</a>
-  <a href="page4.html" class="circle">K</a>
+    <div class="root">
+      <!-- Burgarmeny -->
+ 
+        <div class="burger-menu">
+          <label for="menu-toggle" id="menuIcon">&#9776;</label>
+          <input type="checkbox" id="menu-toggle">
+          <ul id="menu">
+              <li><a href="#OmOss">Om Oss</a></li>
+              <li><a href="#Projekt">Projekt</a></li>
+              <li><a href="#Kontakt">Kontakt</a></li>
+          </ul>
         </div>
 
+        <h1 class="rub1">Bästa Speldatorer</h1>
 
-    <div id="placeholder">
+        <img id="header-img" src="SharkSeries.png" alt="SharkSeries">
 
+        <div class="container">
+            <img src="aquarium_pro.png" alt="Aquarium Pro PC">
+            <img src="corsair4000dmig.png" alt="Corsair PC">
+            <img src="fractal_design_2.png" alt="Fractal Design PC">
+            <img src="fractal_design.png" alt="Fractal Design PC">
+            <img src="tsunami_pro.webp" alt="Tsunami Pro PC">
+            <img src="nzxth5flow6.png" alt="NZXT H5 Flow PC">
+        </div>
+
+        <div class="gridContainer">
+            <div class="items item1">
+                <img src="aquarium_pro.png" alt="Aquarium Pro PC">
+                <div class="card-title">SILENT PREDATOR SPELDATOR</div>
+                <div class="card-details">
+                    <ul>
+                        <li>AMD Ryzen™ 7 5700X 8 x 3.4/4.6 GHz</li>
+                        <li>AMD Radeon™ RX 7600 XT 16GB</li>
+                        <li>16GB 3200MHz DDR4 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items item2">
+                <img src="corsair4000dmig.png" alt="Corsair PC">
+                <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
+                <div class="card-details">
+                    <ul>
+                        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
+                        <li>AMD Radeon RX 7700 XT 12GB</li>
+                        <li>16GB 6000MHz DDR5 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items item3">
+                <img src="fractal_design_2.png" alt="Fractal Design PC">
+                <div class="card-title">SHARK BLOODLUST SPELDATOR</div>
+                <div class="card-details">
+                    <ul>
+                        <li>Intel Core i5-13400F 6p x 2.5/4.6 GHz</li>
+                        <li>Nvidia GeForce RTX 4060 8GB</li>
+                        <li>16GB 3200MHz DDR4 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items item4">
+                <img src="fractal_design.png" alt="Fractal Design PC">
+                <div class="card-title">SHARK BOOST GAMING PC</div>
+                <div class="card-details">
+                    <ul>
+                        <li>AMD Ryzen 9 7700 8 x 3.8/5.3 GHz</li>
+                        <li>AMD Radeon RX 7700 XT 12GB</li>
+                        <li>16GB 6000MHz DDR5 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 10 Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items item5">
+                <img src="tsunami_pro.webp" alt="Tsunami Pro PC">
+                <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
+                <div class="card-details">
+                    <ul>
+                        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
+                        <li>AMD Radeon RX 7700 XT 12GB</li>
+                        <li>16GB 6000MHz DDR5 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="items item6">
+                <img src="nzxth5flow6.png" alt="NZXT H5 Flow PC">
+                <div class="card-title">SHARK ULTIMATOR GAMING PC</div>
+                <div class="card-details">
+                    <ul>
+                        <li>AMD Ryzen 7 7700 8 x 3.8/5.3 GHz</li>
+                        <li>AMD Radeon RX 7700 XT 12GB</li>
+                        <li>16GB 6000MHz DDR5 RAM</li>
+                        <li>1000GB SSD M.2 NVMe</li>
+                        <li>Windows 11 Home</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="anstallda">
+            <h2 id="OmOss">Om oss</h2>
+            <a id="G" href="adminGustav.html" class="circle">G</a>
+            <a id="R" href="adminRikard.html" target="_blank" class="circle">R</a>
+            <a id="A" href="adminAndreas.html" class="circle">A</a>
+            <a id="K" href="adminKayhan.html" class="circle">K</a>
+        </div>
+
+        <div id="placeholder"></div>
+
+        <h3 id="Kontakt">Kontakt</h2>
+        <a href="contact.html">Support</a>
+
+        <footer id="footer">
+            Kontakta oss...
+        </footer>
     </div>
-
-
-    <h2 id="Kontakt"> Kontakt</h2>
-
-    <a href="contact.html">Support</a>
-
-    <footer id="footer">
-        Kontakta oss...
-    </footer>
-
 </body>
 </html>
