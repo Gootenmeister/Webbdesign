@@ -15,6 +15,14 @@ header {
     top: 0;
 }
 
+#header-img {
+    margin: 3rem;
+    padding: 0 2 0 2;
+    text-align: center;
+    display: block;
+
+}
+
 #contact-header {
     font-style: italic;
     text-decoration: underline;
@@ -69,10 +77,6 @@ a:hover {
     align-items: center;
 
 }
-img{
-    margin: 0 0.5rem;
-    padding: 0 2 0 2;
-}
 
 .rub1{
     margin: 2rem;
@@ -85,7 +89,7 @@ width: 40%;
 margin: 0,5rem 2rem;
 padding: auto;
 grid-template-columns: repeat(3,1fr);
-    
+
 }
 .items{
     background-color: rgb(17, 0, 255);
