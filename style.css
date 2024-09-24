@@ -16,9 +16,8 @@ header {
 }
 
 #header-img {
-    margin: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin: 3rem;
+    padding: 0 2 0 2;
     text-align: center;
     display: block;
 
@@ -203,16 +202,16 @@ a:hover {
         #name{
             grid-row:1;
             grid-column:2 ;
-    }
+        }
     
-    #email{
+        #email{
         grid-row:1 ;
         grid-column: 3;
-    }
+        }
 
-    #message {
+        #message {
         grid-row: 2 / span 3;
         grid-column: 1 / span 2;
-    }
+        }
 
-}
+    }
