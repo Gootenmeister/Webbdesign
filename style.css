@@ -338,3 +338,49 @@ a:hover {
     margin: 0; 
 }
 
+.handelscontainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color:white;
+}
+
+.handelscontainer h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.handelscontainer h3 {
+    font-size: 1.4em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.handelscontainer h4 {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.handelscontainer p {
+    margin-bottom: 15px;
+}
+
+.handelscontainer ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.handelscontainer ul li {
+    margin-bottom: 10px;
+}
