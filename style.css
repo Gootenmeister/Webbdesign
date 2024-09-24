@@ -1,13 +1,44 @@
 /* försök inte ha så mycket i body om man inte ska skriva över det. */
 
+/* Generellt utseende */
 body {
-    background-color: #00001a;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
-header {
+/* Format */
+.root{
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Standard format för rubriker */
+h1{
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+/* Burgar meny */
+#burger-menu{
     color: bisque;
-    backdrop-filter: blur(2px);
     padding: 1rem;
     text-align: right;
     position: sticky;
@@ -15,24 +46,10 @@ header {
     top: 0;
 }
 
-#header-img {
-    margin: 3rem;
-    padding: 0 2 0 2;
-    text-align: center;
-    display: block;
-
-}
-
-#contact-header {
-    font-style: italic;
-    text-decoration: underline;
-    text-align: left;
-
-}
-
 #menu {
     display: none;
     list-style-type: none;
+    text-decoration: none;
 }
 #menu-toggle:checked ~ #menu {
     display: block;
@@ -41,13 +58,34 @@ header {
 #menu-toggle {
     display: none;
 }
+
+.rub1{
+    margin: 2rem;
+    text-align: center;
+}
+
+#header-img {
+    margin: 3rem;
+    padding: 0 2 0 2;
+    text-align: center;
+    display: block;
+}
+
+#contact-header {
+    font-style: italic;
+    text-decoration: underline;
+    text-align: left;
+}
+
 a{
     color: bisque;
 }
+
 a:hover {
     background-color: #D973AB;
     text-align: left;
 }
+
 .container{
     margin: 12px 0 0 12px;
     width: 100%;
@@ -72,10 +110,6 @@ a:hover {
     width: 25%;
     align-items: center;
     
-}
-
-.rub1{
-    margin: 2rem;
 }
 
 .gridContainer{
@@ -174,7 +208,7 @@ a:hover {
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background-color: #681f1f;
+      background-color: rgb(0, 0, 0);
       margin: 20px;
       text-align: center;
       line-height: 200px;
@@ -184,12 +218,24 @@ a:hover {
       margin: 60px;
     }
     
-    .circle:hover {
-        background-color: #aaa;
+    /* Format och ändringar på individuella profilbilder */
+    .circle#G{
+        background-color: rgb(0, 255, 0);
     }
-    
-    
-    
+    .circle#R{
+        background-color: rgb(255, 0, 0);
+    }
+    .circle#A{
+        background-color: rgb(230, 230, 0);
+    }
+    .circle#K{
+        background-color: rgb(0, 0, 255);
+    }
+
+    .circle:hover {
+        background-color: rgb(170, 170, 170);
+    }  
+
     .contactContainer {
         display: grid;
     }
@@ -214,4 +260,4 @@ a:hover {
         grid-column: 1 / span 2;
         }
 
-    }
+}
