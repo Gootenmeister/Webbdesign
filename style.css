@@ -30,10 +30,6 @@ header {
 
 }
 
-.contactContainer {
-    display: grid;
-}
-
 #menu {
     display: none;
     list-style-type: none;
@@ -69,13 +65,13 @@ a:hover {
     border-radius: 5px;
     border: 2px solid rgb(39, 33, 24);
     transition: all ease-in-out 0.5s;
-   
+    
 }
 
 .container img:hover{
     width: 25%;
     align-items: center;
-
+    
 }
 
 .rub1{
@@ -83,13 +79,13 @@ a:hover {
 }
 
 .gridContainer{
-display: grid;
-height: 60%;
-width: 40%;
-margin: 0,5rem 2rem;
-padding: auto;
-grid-template-columns: repeat(3,1fr);
-
+    display: grid;
+    height: 60%;
+    width: 40%;
+    margin: 0,5rem 2rem;
+    padding: auto;
+    grid-template-columns: repeat(3,1fr);
+    
 }
 .items{
     background-color: rgb(17, 0, 255);
@@ -145,49 +141,77 @@ grid-template-columns: repeat(3,1fr);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
-  }
-  
-  .card-image {
+}
+
+.card-image {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .card-image img {
+}
+
+.card-image img {
     width: 200px;
     height: 200px;
-  }
-  
-  .card-title {
+}
+
+.card-title {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .card-details {
+}
+
+.card-details {
     font-size: 1em;
-  }
+}
 
 .anstallda {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* cirkel för Anställda med länker */
+}
+
+/* cirkel för Anställda med länker */
   .circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: #681f1f;
-    margin: 20px;
-    text-align: center;
-    line-height: 200px;
-    color: #fff;
-    text-decoration: none;
-  padding: 60px;
-  margin: 60px;
-  }
-  
-  .circle:hover {
-    background-color: #aaa;
-  }
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #681f1f;
+      margin: 20px;
+      text-align: center;
+      line-height: 200px;
+      color: #fff;
+      text-decoration: none;
+      padding: 60px;
+      margin: 60px;
+    }
+    
+    .circle:hover {
+        background-color: #aaa;
+    }
+    
+    
+    
+    .contactContainer {
+        display: grid;
+    }
+    
+    @media only screen and (min-width: 750px) {
+        #issue{
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #name{
+            grid-row:1;
+            grid-column:2 ;
+    }
+    
+    #email{
+        grid-row:1 ;
+        grid-column: 3;
+    }
+
+    #message {
+        grid-row: 2 / span 3;
+        grid-column: 1 / span 2;
+    }
+
+}
