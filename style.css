@@ -173,7 +173,7 @@ grid-template-columns: repeat(3,1fr);
     align-items: center;
   }
   
-  
+  /* cirkel för Anställda med länker */
   .circle {
     width: 200px;
     height: 200px;
@@ -188,7 +188,6 @@ grid-template-columns: repeat(3,1fr);
   margin: 60px;
   }
   
- 
   .circle:hover {
     background-color: #aaa;
   }
