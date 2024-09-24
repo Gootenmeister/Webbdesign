@@ -162,3 +162,29 @@ grid-template-columns: repeat(3,1fr);
   .card-details {
     font-size: 1em;
   }
+
+.anstallda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #681f1f;
+    margin: 20px;
+    text-align: center;
+    line-height: 200px;
+    color: #fff;
+    text-decoration: none;
+  padding: 60px;
+  margin: 60px;
+  }
+  
+ 
+  .circle:hover {
+    background-color: #aaa;
+  }
