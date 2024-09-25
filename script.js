@@ -1,13 +1,10 @@
-// Bestagon -- realtidsvalidering fram till line 74 skriv i disc om ändra
-
-// sätter värden till false - går inte att skicka
-// om samtliga värden är 0:
 function toggleMenu() {
     let menu = document.getElementById("menu");
     menu.classList.toggle("active");
 }
 
-
+// sätter värden till false - går inte att skicka
+// om samtliga värden är 0:
 let namecheck = 0;
 let emailcheck = 0;
 let phonecheck = 0;
