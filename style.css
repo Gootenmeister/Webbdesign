@@ -247,50 +247,27 @@ a:hover {
         display: grid;
     }
     
-    @media only screen and (min-width: 750px) {
-        #issue{
-            grid-row: 1;
-            grid-column: 1;
-        }
-        #name{
-            grid-row:1;
-            grid-column:2 ;
-        }
     
-        #email{
-        grid-row:1 ;
-        grid-column: 3;
-        }
-
-        #message {
-        grid-row: 2 / span 3;
-        grid-column: 1 / span 2;
-        }
-}
-
-.error{
-    color: #ff0000;
-}
-
-.Välkomst-meddelande h1 {
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    text-align: center; 
-}
-
-.punktlista {
-    list-style-type: disc;
-    padding-left: 20px; 
-    align-self: flex-start; 
-    margin-top: 0; 
-}
-
-.punktlista li {
-    padding-left: 20px; 
-    color: #fff; 
+    .Välkomst-meddelande h1 {
+        color: #fff;
+        font-family: 'Arial', sans-serif;
+        text-align: center; 
+    }
+    
+    .punktlista {
+        list-style-type: disc;
+        padding-left: 20px; 
+        align-self: flex-start; 
+        margin-top: 0; 
+    }
+    
+    .punktlista li {
+        padding-left: 20px; 
+        color: #fff; 
     font-size: 18px; 
     margin-bottom: 5px; 
 }
+
 
 #omOss h1 {
     font-size: 32px; 
@@ -313,74 +290,27 @@ a:hover {
     text-align: center;
 }
 
-#bottenlänkar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    margin: 40px 0 20px 0;
+.error{
+    color: #ff0000;
 }
 
-#bottenlänkar h3 {
-    margin: 0;
-    color: white;
-    padding: 0;
-}
+@media only screen and (min-width: 750px) {
+    .formName{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .formEmail{
+    grid-row:1;
+    grid-column:2 ;
+    }
 
-#bottenlänkar .nav-item {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-}
+    .formPhone{
+    grid-row:1 ;
+    grid-column: 3;
+    }
 
-#bottenlänkar ul {
-    list-style-type: none;
-    padding-left: 0; 
-    margin: 0; 
-}
-
-.handelscontainer {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color:white;
-}
-
-.handelscontainer h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: white;
-    text-align: center;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
-}
-
-.handelscontainer h3 {
-    font-size: 1.4em;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.handelscontainer h4 {
-    font-size: 1.2em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.handelscontainer p {
-    margin-bottom: 15px;
-}
-
-.handelscontainer ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-.handelscontainer ul li {
-    margin-bottom: 10px;
+    .formMsg {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    }
 }
