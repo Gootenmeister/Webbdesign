@@ -3,12 +3,14 @@ function toggleMenu() {
     menu.classList.toggle("active");
 }
 
-// sätter värden till false - går inte att skicka
-// om samtliga värden är 0:
+// bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32
+// kollar om vi kan skicka formuläret
 let namecheck = 0;
 let emailcheck = 0;
 let phonecheck = 0;
 let msgcheck = 0;
+let msgalreadycheck = 0;
+
 
 document.getElementById('name').addEventListener('input', function() {
     const name = this.value;
@@ -70,7 +72,11 @@ document.getElementById('message').addEventListener('input', function() {
 document.getElementById('contactFormSend').addEventListener('click', function() {
     if (namecheck === 1 && emailcheck === 1 && phonecheck === 1 && msgcheck === 1) {
         alert('Ditt meddelande har skickats.\nTack för din feedback!');
+        msgalreadycheck = 1;
+    } else if(msgalreadycheck === 1) {
+        alert('Ditt meddelande har redan skickats!')
     } else {
-        alert('Gör klart formuläret!');
+        alert('Du måste göra klart formuläret.');
     }
+
 });
