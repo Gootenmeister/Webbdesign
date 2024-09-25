@@ -1,4 +1,4 @@
-//Bestagon -- realtidsvalidering
+// Bestagon -- realtidsvalidering fram till line 74 skriv i disc om ändra
 
 // sätter värden till false - går inte att skicka
 // om samtliga värden är 0:
@@ -59,7 +59,7 @@ document.getElementById('message').addEventListener('input', function() {
     } else if (message.length > 500) {
         msgFeedback.textContent = 'Meddelandet är för långt - max 500 tecken.';
     } else {
-        msgFeedback.textContent = ''; // Inga fel, rensa meddelandet
+        msgFeedback.textContent = '';
         msga = 1;
     }
 });
