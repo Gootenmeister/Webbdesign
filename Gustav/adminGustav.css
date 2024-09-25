@@ -1,5 +1,7 @@
 /* Generellt utseende */
 body {
+    display: flexbox;
+    flex-direction: column;
     background-color: rgb(50, 50, 50);
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -17,6 +19,19 @@ body {
     background-color: #323232;
     box-shadow: 0 0 10px #0000001a;
 }
+
+#pfp {
+    border-radius: 12%;
+    width: 200px;
+}
+
+@media (min-width: 600px) {
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 
 .blink {
     animation: blink 1s linear infinite;
