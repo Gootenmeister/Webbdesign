@@ -67,11 +67,11 @@ a {
 }
 
 .back {
- size: 3rem;
- color: #ada796;
- transition: all .7s ease-in-out;
- width: 60px;
- text-decoration: none;
+    size: 3rem;
+    color: #ada796;
+    transition: all .7s ease-in-out;
+    width: 60px;
+    text-decoration: none;
 }
 
 .back:hover {
