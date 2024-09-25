@@ -1,0 +1,23 @@
+
+
+
+@media only screen and (min-width: 750px) {
+    .formName{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .formEmail{
+    grid-row:1;
+    grid-column:2 ;
+    }
+
+    .formPhone{
+    grid-row:1 ;
+    grid-column: 3;
+    }
+
+    .formMsg {
+    grid-row: 2 / span 3;
+    grid-column: 1 / span 2;
+    }
+}
