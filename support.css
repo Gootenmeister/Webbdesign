@@ -4,6 +4,12 @@ textarea {
     height: 200px;
 }
 
+#contactFormSend {
+    width: 56px;
+    color: #00001a;
+    text-align: center;
+}
+
 @media only screen and (min-width: 750px) {
     body {
         display: flex;
@@ -18,7 +24,7 @@ textarea {
           width: 800px;
           height: 200px;
       }
-      
+
     .contactContainer {
         display: grid;
         height: 60%;
@@ -54,3 +60,19 @@ textarea {
         grid-column: 1 / span 2;
     }
 }
+
+
+.back {
+ size: 3rem;
+ color: #ada796;
+ transition: all .7s ease-in-out;
+ width: 60px;
+
+}
+
+.back:hover {
+    transform: scale(1.13);
+}
+/* p {
+    width: 40px;
+} */
