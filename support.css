@@ -1,29 +1,56 @@
-
-.formItem {
-    display: grid;
+textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
 }
 
-
-.contactContainer {
-    display: grid;
-}
 @media only screen and (min-width: 750px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+    
+      textarea {
+          resize: none;
+          width: 800px;
+          height: 200px;
+      }
+      
+    .contactContainer {
+        display: grid;
+        height: 60%;
+        width: 40%;
+        align-content: center;
+        margin: 0;
+      }
+
+    #issue {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
     .formName{
         grid-row: 1;
         grid-column: 1;
+        width: 300px;
     }
     .formEmail{
-    grid-row:1;
-    grid-column:2 ;
+        grid-row:1;
+        grid-column:2 ;
+        width: 300px;
     }
 
     .formPhone{
-    grid-row:1 ;
-    grid-column: 3;
+        grid-row:1 ;
+        grid-column: 3;
+        width: 200px;
     }
 
     .formMsg {
-    grid-row: 2 / span 3;
-    grid-column: 1 / span 2;
+        grid-row: 2 / span 3;
+        grid-column: 1 / span 2;
     }
 }
