@@ -61,18 +61,19 @@ textarea {
     }
 }
 
+a {
+    text-decoration: none;
+    width: 40;
+}
 
 .back {
  size: 3rem;
  color: #ada796;
  transition: all .7s ease-in-out;
  width: 60px;
-
+ text-decoration: none;
 }
 
 .back:hover {
     transform: scale(1.13);
 }
-/* p {
-    width: 40px;
-} */
