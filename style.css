@@ -49,28 +49,94 @@ h3{
     pointer-events: none;
 }
 
-/* Burgar meny */
-#burger-menu{
-    color: #ffe4c4;
-    padding: 1rem;
-    text-align: right;
-    position: sticky;
-    height: 10vh;
-    top: 0;
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    flex-direction: column;
 }
 
-#menu {
+.burger-menu {
     display: none;
-    list-style-type: none;
-    text-decoration: none;
+    cursor: pointer;
 }
-#menu-toggle:checked ~ #menu {
+
+.burger-menu span {
     display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #e2cece;
+    margin: 5px 0;
 }
 
-#menu-toggle {
-    display: none;
+.menu {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    transition: all 0.3s ease-in-out;
 }
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-start;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 20%;
+        padding: 10px 0;
+    }
+
+    .menu.active {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .menu li {
+        text-align: right;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu li a {
+        color: white;
+        background-color: #444;
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .menu li a:hover {
+        background-color: #555;
+    }
+}
+
 
 /* Rubrik 1 */
 .rub1{

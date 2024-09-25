@@ -2,6 +2,12 @@
 
 // sätter värden till false - går inte att skicka
 // om samtliga värden är 0:
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("active");
+}
+
+
 let namecheck = 0;
 let emailcheck = 0;
 let phonecheck = 0;
