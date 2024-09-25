@@ -52,7 +52,7 @@ document.getElementById('phone').addEventListener('input', function() {
         phoneFeedback.textContent = 'Telefonnumret får inte vara längre än 12 tecken';
     } else {
         phoneFeedback.textContent = '';
-        emailcheck = 1;
+        phonecheck = 1;
     }
 });
 
@@ -66,7 +66,7 @@ document.getElementById('message').addEventListener('input', function() {
         msgFeedback.textContent = 'Meddelandet är för långt - max 500 tecken.';
     } else {
         msgFeedback.textContent = '';
-        msga = 1;
+        msgcheck = 1;
     }
 });
 
