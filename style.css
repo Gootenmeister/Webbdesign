@@ -49,6 +49,22 @@ h3{
    height:90px;
 margin-bottom: -2rem;
 }
+.sok{
+    background-color: none;
+    color: #333;
+    max-height: 90px;
+    margin-top:-4rem;
+    margin-left: 30rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.sok input, button{
+    background-color: #424242;
+    color: white;
+   height: 2rem;
+    
+}
 
 
 nav {
