@@ -61,6 +61,7 @@ document.getElementById('message').addEventListener('input', function() {
 
     if (message.length < 10) {
         msgFeedback.textContent = 'Meddelandet är för kort - minst 10 tecken!';
+        msgcheck = 0;
     } else if (message.length > 500) {
         msgFeedback.textContent = 'Meddelandet är för långt - max 500 tecken.';
     } else {
@@ -72,11 +73,11 @@ document.getElementById('message').addEventListener('input', function() {
 document.getElementById('contactFormSend').addEventListener('click', function() {
     if (namecheck === 1 && emailcheck === 1 && phonecheck === 1 && msgcheck === 1) {
         alert('Ditt meddelande har skickats.\nTack för din feedback!');
-        msgalreadycheck = 1;
-    } else if(msgalreadycheck === 1) {
-        alert('Ditt meddelande har redan skickats!')
+        msgcheck = 2;
+    } else if(msgcheck === 2) {
+        alert('Ditt meddelande har redan skickats!');
     } else {
-        alert('Du måste göra klart formuläret.');
+        alert('Gör klart formuläret!');
     }
 
 });
