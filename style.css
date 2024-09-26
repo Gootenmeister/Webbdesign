@@ -476,3 +476,18 @@ text-decoration: none;
 .handelscontainer ul li {
     margin-bottom: 10px;
 }
+
+#footer p {
+
+    font-style: italic;
+
+}
+
+#personalrubrik h1 {
+
+    margin-top: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+
+}
