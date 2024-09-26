@@ -12,6 +12,44 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.getElementById('searchButton').addEventListener('click', performSearch);
+document.getElementById('searchInput').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        performSearch();
+    }
+});
+
+function performSearch() {
+    const input = document.getElementById('searchInput').value;
+    const content = document.getElementById('sokText');
+    //regex för att matcha keywordet med global insensitivity
+    const regex = new RegExp(`(${input})`, 'gi'); 
+
+    content.innerHTML = content.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+    if (input) {
+        const listItems = content.getElementsByTagName('li');
+        let firstMatchFound = false;
+
+        //loopar för alla listtaggar
+        for (let li of listItems) {
+            li.innerHTML = li.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+
+
+            if (regex.test(li.innerHTML)) {
+                //markerar text med .highlight
+                li.innerHTML = li.innerHTML.replace(regex, '<span class="highlight">$1</span>');
+                
+                //gå till första listblocket 
+                if (!firstMatchFound) {
+                    li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstMatchFound = true;
+                }
+            }
+        }
+    }
+}
+
 
 // bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32
 // kollar om vi kan skicka formuläret
@@ -19,7 +57,7 @@ let namecheck = 0;
 let emailcheck = 0;
 let phonecheck = 0;
 let msgcheck = 0;
-let msgalreadycheck = 0;
+// let msgalreadycheck = 0; onödig men monkaS att ta bort
 
 
 document.getElementById('name').addEventListener('input', function() {

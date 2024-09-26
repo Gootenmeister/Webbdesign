@@ -11,6 +11,19 @@ body {
     padding: 0;
 }
 
+/* sökknappsstyling */
+#searchButton {
+    width: 38px;
+    height: 38px;
+    margin: -2px;
+    font-size: 1.2rem;
+}
+
+/* highlightfärg */
+.highlight {
+    background-color: #ff0000;
+}
+
 /* Format */
 .root{
     max-width: 1400px;
