@@ -3,6 +3,16 @@ function toggleMenu() {
     menu.classList.toggle("active");
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll(".selfLinkImage");
+    images.forEach(function(image) {
+        image.addEventListener("click", function() {
+            window.location.href = image.src;
+        });
+    });
+});
+
+
 // bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32
 // kollar om vi kan skicka formuläret
 let namecheck = 0;
