@@ -410,6 +410,8 @@ text-decoration: none;
     justify-content: space-between;
     align-items: flex-start; 
     margin: 40px 0 20px 0;
+    margin-top: 150px;
+    margin-bottom: 5px;
 }
 
 #bottenlänkar h3 {
