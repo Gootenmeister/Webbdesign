@@ -63,6 +63,7 @@ margin-bottom: -2rem;
     align-items: center;
     display: flex;
     justify-content: center;
+    border: none;
    
 }
 .sok input, button{
@@ -78,6 +79,7 @@ margin-bottom: -2rem;
     height: 2rem;
     border-radius: 25px;
     text-align: start;
+    
 }
 .sok button {
     width: 38px;
@@ -85,6 +87,10 @@ margin-bottom: -2rem;
     border-radius: 50%;
     font-size: 1rem;
     text-align: center;
+}
+.sok button:focus {
+    border: none;
+    outline: none;
 }
 
 

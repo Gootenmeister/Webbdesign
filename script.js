@@ -24,8 +24,14 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 function performSearch() {
     const input = document.getElementById('searchInput').value.trim();
 
+    const invalidInputs = [".", "/", ">", "<", "\""];
+
+    if (invalidInputs.includes(input)) {
+        alert("Ange ett giltigt sökord");
+        return;
+    }
     if (input === "") {
-        alert("Ange sökord");
+        alert("Ange ett eller flera sökord");
         return;
     }
 
