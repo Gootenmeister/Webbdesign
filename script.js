@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+//sökblocket har tagit bort alla anadra comments
 document.getElementById('searchButton').addEventListener('click', performSearch);
 document.getElementById('searchInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -20,35 +22,53 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 });
 
 function performSearch() {
-    const input = document.getElementById('searchInput').value;
-    const content = document.getElementById('sokText');
-    //regex för att matcha keywordet med global insensitivity
-    const regex = new RegExp(`(${input})`, 'gi'); 
+    const input = document.getElementById('searchInput').value.trim();
+    const regExp = new RegExp(`(${input})`, 'gi');
 
-    content.innerHTML = content.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
+    removeHighlights();
 
-    if (input) {
-        const listItems = content.getElementsByTagName('li');
-        let firstMatchFound = false;
+    let firstHit = false;
+    let matchFound = false;
 
-        //loopar för alla listtaggar
-        for (let li of listItems) {
-            li.innerHTML = li.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/g, '$1');
-
-
-            if (regex.test(li.innerHTML)) {
-                //markerar text med .highlight
-                li.innerHTML = li.innerHTML.replace(regex, '<span class="highlight">$1</span>');
-                
-                //gå till första listblocket 
-                if (!firstMatchFound) {
-                    li.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    firstMatchFound = true;
-                }
+    //för all list text 
+    const listItems = document.getElementsByTagName('li');
+    for (let li of listItems) {
+        if (regExp.test(li.innerHTML)) {
+            li.innerHTML = li.innerHTML.replace(regExp, '<span class="highlight">$1</span>');
+            if (!firstHit) {
+                li.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstHit = true;
             }
+            matchFound = true;
         }
     }
+
+    //pTag loop
+    const paragraphs = document.getElementsByTagName('p');
+    for (let p of paragraphs) {
+        if (regExp.test(p.innerHTML)) {
+            p.innerHTML = p.innerHTML.replace(regExp, '<span class="highlight">$1</span>');
+            if (!firstHit) {
+                p.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                firstHit = true;
+            }
+            matchFound = true;
+        }
+    }
+
+    if (!matchFound) {
+        alert("Inga resultat hittades för din sökning.");
+    }
 }
+
+//func för att ta bort <span class="highlight"> utan att påverka textN
+function removeHighlights() {
+    const highlightedElements = document.querySelectorAll('.highlight');
+    highlightedElements.forEach(element => {
+        element.outerHTML = element.innerHTML;
+    });
+}
+
 
 
 // bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32
