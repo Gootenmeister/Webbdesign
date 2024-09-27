@@ -145,7 +145,18 @@ nav {
     background-color: #ddd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 943px) {
+
+    .sok{
+        display: block;
+        align-self: flex-end;
+    }
+    .sok input, button{
+        display: block;
+        align-self: flex-end;
+        
+    }
+
     nav {
         justify-content: flex-start;
         align-items: flex-end;
