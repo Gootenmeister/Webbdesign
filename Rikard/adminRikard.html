@@ -28,7 +28,23 @@
         <br>
         
         <div id="profilbild">
-            <img src="../bilder/Namnlös.png" alt="">
+            <img src="../bilder/Namnlös.png" alt="" usemap="#image-map" width="351" height="351px">
+
+            <div class="overlay" id="sec1"></div>
+            <div class="overlay" id="sec2"></div>
+            <div class="overlay" id="sec3"></div>
+
+            <div class="map">
+                <map name="image-map">
+                    <area shape="rect" coords="50,50,150,150" href="#section-1" alt="Område 1" data-overlay="sec1">
+                    
+                    <area shape="circle" coords="300,200,50" href="#section-2" alt="Område 2" data-overlay="sec2">
+                    
+                    <area shape="poly" coords="100,50,200,50,200,70,100,70" href="#section-3" alt="Område 3" data-overlay="sec3">
+                </map>
+            </div>
+
+            <br>
         </div>
 
         <br>
@@ -72,7 +88,24 @@
                     </details>
                 </div>
             </div>
-                
+        
+          <div class="sections">
+            <section id="section-1">
+                <h2>Sektion 1</h2>
+                <p>Detta är innehållet på sektion 1</p>
+            </section>
+            
+            <section id="section-2">
+                <h2>Sektion 2</h2>
+                <p>Detta är innehållet på sektion 2</p>
+            </section>
+            
+            <section id="section-3">
+                <h2>Sektion 3</h2>
+                <p>Detta är innehållet på sektion 3</p>
+            </section>
+        </div>
+
             <img src="" alt="">
         </div>
 

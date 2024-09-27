@@ -50,7 +50,118 @@
 
         <div class="rub1">
             <h2>Välkommen till Grak bla bla bla!</h2>
-            <img class=" imagePc" src="bilder/CP.PNG" alt="PC">
+            
+            <div class="specs">
+                <img class="specs-img" src="bilder/specs.png" alt="PC" usemap="#image-map">
+
+                <div class="image-map">
+                    <map name="point-sections">
+                        <!-- Vänster sida -->
+                        <area shape="rect" coords="0,0,300,100" href="#cpu" alt="CPU">
+                        <area shape="rect" coords="0,100,300,200" href="#cpu-kylning" alt="CPU-kylning">
+                        <area shape="rect" coords="0,200,300,300" href="#moderkort" alt="Moderkort">
+                        <area shape="rect" coords="0,300,300,400" href="#grafikkort" alt="Grafikkort">
+
+                        <!-- Höger sida -->
+                        <area shape="rect" coords="1525,0,1825,100" href="#stromforsorjning" alt="Strömförsörjning">
+                        <area shape="rect" coords="1525,100,1825,200" href="#datorlada" alt="Datorlåda">
+                        <area shape="rect" coords="1525,200,1825,300" href="#ssd" alt="SSD">
+                        <area shape="rect" coords="1525,300,1825,400" href="#ram" alt="RAM">
+
+                    </map>
+                </div>
+
+                <div class="specs-text">
+                    <div class="specs-cpu">
+                        <section id="cpu">
+                            <details>
+                                <summary class="title-bold">Detta är sektion CPU</summary>
+                                <p>Centralenheten, eller Central Processing Unit (CPU), är datorns "hjärna". Den ansvarar för att utföra instruktioner från programvara och utföra beräkningar.
+                                    Den hanterar alla de operationer som datorn måste göra för att köra program och processer. CPU har ofta flera kärnor, 
+                                    vilket gör att de kan hantera flera uppgifter samtidigt, vilket förbättrar prestandan.</p>
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-cooling">
+                        <section id="cpu-kylning">
+                            <details>
+                                <summary class="title-bold">Detta är sektion CPU-kylning</summary>
+                                <p>CPU-kylning är nödvändig för att hålla CPU temperatur inom säkra gränser. 
+                                    När en CPU arbetar hårt genererar den värme, och om den blir för varm kan det leda till prestandaproblem eller till och med skador. 
+                                    Kylsystem kan vara luftbaserade (fläktar) eller vätskebaserade (vätskekylare) och hjälper till att hålla temperaturen låg.</p>
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-motherboard">
+                        <section id="moderkort">
+                            <details>
+                                <summary class="title-bold">Detta är sektion Moderkort</summary>
+                                <p>Moderkortet är den centrala kretskortet i datorn som kopplar samman alla komponenter, inklusive CPU, GPU, RAM, och lagringsenheter. 
+                                    Det tillhandahåller också ström till dessa enheter och gör det möjligt för dem att kommunicera med varandra. 
+                                    Moderkort har olika anslutningar och portar för perifera enheter, såsom USB-portar, nätverksanslutningar och ljudutgångar.</p>    
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-gpu">
+                        <section id="grafikkort">
+                            <details>
+                                <summary class="title-bold">Detta är sektion Grafikkort</summary>
+                                <p>Grafikprocessor, eller Graphics Processing Unit (GPU), är en specialiserad processor som används för att hantera rendering av bilder, 
+                                    grafik och videoinnehåll. Den är särskilt viktig för spel och grafiskt intensiva applikationer, som videoredigering och 3D-modellering. 
+                                    Till skillnad från en CPU kan en GPU hantera många fler parallella processer, vilket gör den mycket effektiv för att bearbeta grafik.</p>
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-power">
+                        <section id="stromforsorjning">
+                            <details>
+                                <summary class="title-bold">Detta är sektion Nätaggregat</summary>
+                                <p>Strömförsörjningen, även kallad nätaggrigatet, är en komponent som konverterar växelström (AC) från vägguttaget till likström (DC), som datorns komponenter behöver. 
+                                    Den förser alla delar av datorn med den ström som krävs för att fungera. En bra strömförsörjning är avgörande för att säkerställa stabilitet och pålitlighet.</p>
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-chassi">
+                        <section id="datorlada">
+                            <details>
+                                <summary class="title-bold">Detta är sektion Chassi</summary>
+                                <p>Datorlådan, även kallad chassi, är det hölje som innehåller alla datorns komponenter. Den skyddar dem mot fysisk skada, damm och andra miljöfaktorer.
+                                    Datorlådor finns i olika storlekar och former, och många har inbyggda fläktar för att hjälpa till med kylningen. De har också fack för att montera hårddiskar, optiska enheter och moderkort.</p>
+                            </details>
+                        </section>
+                    </div>
+
+                    <div class="specs-ssd">
+                        <section id="ssd">
+                            <details>
+                                <summary class="title-bold">Detta är sektion SSD</summary>
+                                <p>Lagringsenheten, eller Solid State Drive (SSD), som använder flashminne för att spara data. Den är snabbare än traditionella hårddiskar (HDD) eftersom den inte har rörliga delar, 
+                                    vilket gör att den kan läsa och skriva data mycket snabbare. SSD förbättrar systemets prestanda, särskilt när det gäller att starta upp operativsystemet och ladda program.</p>
+                            </details>
+                        </section>
+                    </div>
+                        
+                    <div class="specs-ram">
+                        <section id="ram">
+                            <details>
+                                <summary class="title-bold">Detta är sektion RAM</summary>
+                                <p>Datorns korttidsminne, eller Random Access Momory (RAM). Det används för att lagra data som datorn aktivt använder eller bearbetar. 
+                                    Ju mer RAM en dator har, desto fler program kan den köra samtidigt och desto mer data kan den bearbeta utan att bli långsam. 
+                                    När datorn stängs av förloras all information i RAM, vilket skiljer det från permanent lagring (som en SSD eller HDD).</p>
+                            </details>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+            <br>
+
             <ul class="punktlista">
                 <li>Specialister på att bygga och sälja datorer</li>
                 <li>Snabbast i stan</li>

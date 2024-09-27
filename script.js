@@ -81,6 +81,17 @@ function removeHighlights() {
     });
 }
 
+// Ladda imagemap-resizer från ett CDN
+const script = document.createElement('script');
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js";
+document.head.appendChild(script);
+
+// Initiera imageMapResizer när dokumentet är färdigladdat
+document.addEventListener('DOMContentLoaded', function() {
+  script.onload = function() {
+    imageMapResize(); // Anpassar imagemap när bildstorleken ändras
+  };
+});
 
 
 // bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32

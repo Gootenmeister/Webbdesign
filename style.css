@@ -42,6 +42,11 @@ h3{
     color: #ffffff;
 }
 
+.title-bold{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -186,19 +191,52 @@ nav {
         background-color: #555;
     }
 }
-.imagePc{
+
+.specs-img{
+    width: 1825px;
+    height: 530px;
     margin: 3rem;
     padding: 0 2 0 2;
     text-align: center;
     max-width: 95%;
     height: auto;
-border-radius: 5%;
     background:transparent;
-    opacity: 20%;
 }
-.imagePc:hover{
-    transition: all ease-in-out 2s;
-    opacity: 95%;
+
+.specs-text{
+    
+}
+
+.specs-cpu{
+
+}
+
+.specs-cooling{
+
+}
+
+.specs-motherboard{
+
+}
+
+.specs-gpu{
+
+}
+
+.specs-power{
+
+}
+
+.specs-chassi{
+
+}
+
+.specs-ssd{
+
+}
+
+.specs-ram{
+
 }
 
 /* Rubrik 1 */

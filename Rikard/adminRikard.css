@@ -77,4 +77,15 @@ summary{
     cursor: pointer;
 }
 
+.sections{
+    color: green;
+}
 
+.map{
+    color: red;
+}
+
+.overlay{
+    background-color: red;
+    pointer-events: none;
+}
