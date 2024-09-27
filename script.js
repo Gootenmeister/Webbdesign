@@ -23,6 +23,12 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 
 function performSearch() {
     const input = document.getElementById('searchInput').value.trim();
+
+    if (input === "") {
+        alert("Ange sökord");
+        return;
+    }
+
     const regExp = new RegExp(`(${input})`, 'gi');
 
     removeHighlights();

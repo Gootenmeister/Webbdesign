@@ -11,20 +11,6 @@ body {
     padding: 0;
 }
 
-/* #searchBlock {
-    border-radius:50%;
-}
-
-
-#searchButton {
-    width: 38px;
-    height: 38px;
-    margin: -2px;
-    font-size: 1.2rem;
-    border-radius: 25%;
-} 
-*/
-
 /* highlightfärg */
 .highlight {
     background-color: #ff0000;
