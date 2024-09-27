@@ -59,7 +59,7 @@ margin-bottom: -2rem;
     color: #333;
     max-height: 90px;
     margin-top:-4rem;
-    margin-left: 39.8rem;
+    margin-left: 37rem;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -70,12 +70,13 @@ margin-bottom: -2rem;
     background-color: #424242;
     color: white;
     border: 2px solid #272727;
-    margin: 0.02rem;
+    margin: .02rem;
+    
     
 }
 
 .sok input {
-    width: 200px;
+    width: 250px;
     height: 2rem;
     border-radius: 25px;
     text-align: start;
@@ -148,13 +149,22 @@ nav {
 @media (max-width: 943px) {
 
     .sok{
-        display: block;
-        align-self: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
+        width: 100%;
     }
+
+    .sok input {
+    flex-grow: 1; 
+    margin-right: 0;   
+    min-width: 250px;
+    }
+
+
     .sok input, button{
-        display: block;
-        align-self: flex-end;
-        
+        margin-left: 545px;
+        margin-bottom: 0.22rem;    
     }
 
     nav {
