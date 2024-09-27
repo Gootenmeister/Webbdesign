@@ -88,9 +88,14 @@ margin-bottom: -2rem;
     font-size: 1rem;
     text-align: center;
 }
-.sok button:focus {
-    border: none;
+
+input {
+    text-indent: 10px;
+}
+
+input:focus {
     outline: none;
+    
 }
 
 
