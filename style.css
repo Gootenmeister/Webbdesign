@@ -224,42 +224,6 @@ nav {
     background:transparent;
 }
 
-.specs-text{
-    
-}
-
-.specs-cpu{
-
-}
-
-.specs-cooling{
-
-}
-
-.specs-motherboard{
-
-}
-
-.specs-gpu{
-
-}
-
-.specs-power{
-
-}
-
-.specs-chassi{
-
-}
-
-.specs-ssd{
-
-}
-
-.specs-ram{
-
-}
-
 /* Rubrik 1 */
 .rub1{
     margin: 0.5rem;
@@ -360,37 +324,6 @@ a:hover {
     color: white;
     font-size: 1.5em;
 }
-
-
-/* Vad är detta? */
-/* 
-.card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px #0000001a;
-    padding: 20px;
-    width: 300px;
-}
-
-.card-image {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card-image img {
-    width: 200px;
-    height: 200px;
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-details {
-    font-size: 1em;
-} */
 
 #anstallda {
     display: flex;
