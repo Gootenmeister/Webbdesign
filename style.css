@@ -11,13 +11,19 @@ body {
     padding: 0;
 }
 
-/* sökknappsstyling */
+/* #searchBlock {
+    border-radius:50%;
+}
+
+
 #searchButton {
     width: 38px;
     height: 38px;
     margin: -2px;
     font-size: 1.2rem;
-}
+    border-radius: 25%;
+} 
+*/
 
 /* highlightfärg */
 .highlight {
@@ -67,16 +73,32 @@ margin-bottom: -2rem;
     color: #333;
     max-height: 90px;
     margin-top:-4rem;
-    margin-left: 30rem;
+    margin-left: 39.8rem;
     align-items: center;
     display: flex;
     justify-content: center;
+   
 }
 .sok input, button{
     background-color: #424242;
     color: white;
-   height: 2rem;
+    border: 2px solid #272727;
+    margin: 0.02rem;
     
+}
+
+.sok input {
+    width: 200px;
+    height: 2rem;
+    border-radius: 25px;
+    text-align: start;
+}
+.sok button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
 }
 
 
