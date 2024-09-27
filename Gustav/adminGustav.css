@@ -21,8 +21,13 @@ body {
 }
 
 #pfp {
-    border-radius: 12%;
     width: 200px;
+    height: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    scale: 120%;
+
 }
 
 @media (min-width: 600px) {
@@ -62,4 +67,23 @@ body {
     95% {
         opacity: 1;
     }
+}
+
+footer {
+    overflow: hidden;
+}
+.gif-grid {
+    display: flex;
+    margin: 0 -20px;
+    filter: brightness(0.5);
+    filter: contrast(1.1);
+}
+
+.gif-wrapper {
+    display: flex;
+}
+.xflip {
+    transform: scaleX(-1) translate(20px);
+    transform: rotateX(180deg);
+
 }
