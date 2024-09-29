@@ -226,9 +226,18 @@ nav {
 
 /* Rubrik 1 */
 .rub1{
-    margin: 0.5rem;
+    margin: 5rem;
 
     
+}
+.rub1 h2{
+
+    color:rgb(204, 210, 212);
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px rgb(168, 130, 130);
+    font-size: 1.5rem;
+   
 }
 
 #header-img {
