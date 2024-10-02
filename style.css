@@ -213,6 +213,24 @@ nav {
     }
 }
 
+.specs-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.specs-cell{
+    color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px;
+}
+
+.specs-cell-text{
+    color: white;
+}
+
 .specs-img{
     width: 1825px;
     height: 530px;
@@ -241,10 +259,8 @@ nav {
 }
 
 #header-img {
-    margin: 3rem;
-    padding: 0 2 0 2;
     text-align: center;
-    max-width: 95%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -443,9 +459,6 @@ text-decoration: none;
 #bottenlänkar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; 
-    margin: 40px 0 20px 0;
-    margin-bottom: 5px
 }
 
 #bottenlänkar h3 {
@@ -457,7 +470,8 @@ text-decoration: none;
 #bottenlänkar .nav-item {
     display: flex;
     flex-direction: column;
-    padding: 0;
+    flex-grow: 1;
+    margin: 0 10px;
 }
 
 #bottenlänkar ul {

@@ -79,6 +79,10 @@ a {
     width: 40;
 }
 
+.send-btn:hover{
+    cursor: pointer;
+}
+
 .back {
     size: 3rem;
     color: #ada796;
