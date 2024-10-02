@@ -63,46 +63,41 @@ h3{
    height:90px;
 margin-bottom: -2rem;
 }
-.sok{
-    background-color: none;
-    color: #333;
-    max-height: 90px;
-    margin-top:-4rem;
-    margin-left: 37rem;
-    align-items: center;
+.sok {
     display: flex;
     justify-content: center;
-    border: none;
-   
-}
-.sok input, button{
-    background-color: #424242;
-    color: white;
-    border: 2px solid #272727;
-    margin: .02rem;
+    align-items: center;
+    gap: 10px; 
+    width: 100%;
+    max-width: 400px; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .sok input {
-    width: 250px;
+    background-color: #424242;
+    color: white;
+    border: 2px solid #272727;
+    width: 100%; 
     height: 2rem;
     border-radius: 25px;
-    text-align: start;
-    
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
 }
+
 .sok button {
-    width: 38px;
-    height: 38px;
+    background-color: #424242;
+    color: white;
+    border: 2px solid #272727;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     font-size: 1rem;
-}
-
-input {
-    text-indent: 10px;
-}
-
-input:focus {
-    outline: none;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 
@@ -152,7 +147,7 @@ nav {
     background-color: #ddd;
 }
 
-@media (max-width: 943px) {
+@media (max-width: 765px) {
     .sok{
         display: flex;
         justify-content: flex-end;
@@ -198,18 +193,18 @@ nav {
     .menu li {
         text-align: right;
         width: 100%;
-        padding: 10px 0;
+        padding-left: 5px;
     }
 
     .menu li a {
         color: white;
-        background-color: #444;
+        background-color: #4c4848;
         display: block;
-        padding: 10px 20px;
+        
     }
 
     .menu li a:hover {
-        background-color: #555;
+        background-color: #94a7ac;
     }
 }
 
@@ -259,10 +254,17 @@ nav {
 }
 
 #header-img {
-    text-align: center;
-    max-width: 100%;
-    height: auto;
-}
+    display: flex; 
+    justify-content: center; 
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  #header-img img {
+    max-width: 100%; 
+    height: auto; 
+  }
+
+
 
 #contact-header {
     font-style: italic;
@@ -333,80 +335,74 @@ a:hover {
     text-align: left;
 
 }
-@media screen and (max-width: 1024px) {
-    .items{
-        flex: 1 1 calc(50% - 20px); /* Varje objekt tar upp halva bredden på skärmar mindre än 1024px */
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .item {
-        flex: 1 1 100%; /* Varje objekt tar upp hela bredden på skärmar mindre än 768px */
-    }
-}
 .pris-container {
     color: white;
     font-size: 1.5em;
 }
-
 #anstallda {
     display: flex;
-    justify-content: center;
-    align-items: flex-start; 
-    gap: 75px; 
-    padding: 20px; 
-}
-  
-/* cirkel för Anställda med länker */
-.circle {
-display: flex;
-justify-content: center; 
-align-items: center; 
-width: 100px;
-height: 100px;
-background-color: #3498db; 
-color: white;
-border-radius: 50%; 
-font-size: 40px;
-font-weight: bold;
-text-decoration: none; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .circle-container {
+    width: 20%; 
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    text-align: justify; 
+    margin: 10px; 
 }
-    
-/* Format och ändringar på individuella profilbilder */
-.circle#G{
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    color: white;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 10px; /* Liten marginal mellan cirkeln och texten */
+}
+
+.circle#G {
     background-color: #00ff00;
 }
-.circle#R{
+
+.circle#R {
     background-color: #ff0000;
 }
-.circle#A{
+
+.circle#A {
     background-color: #e6e600;
 }
-.circle#K{
-    background-color: #0000ff;
+
+.circle#K {
+    background-color: #b92525;
 }
 
 .circle:hover {
     background-color: #aaaaaa;
     cursor: pointer;
-}  
+}
 
 .circle-text h3 {
-    color: white;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 .circle-text p {
-    color: white;
-    text-align: left;
+    text-align: justify; /* Gör texten justify */
+    margin-bottom: 10px;
+    text-align: right;
 }
-    
+
+  
 .Välkomst-meddelande h1 {
     color: #fff;
     font-family: 'Arial', sans-serif;
@@ -428,8 +424,9 @@ text-decoration: none;
 }
 
 #omOss{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
 }
 
 #omOss h1 {
@@ -449,7 +446,7 @@ text-decoration: none;
     font-size: 16px; 
     line-height: 1.5; 
     margin-bottom: 15px; 
-    text-align: center;
+    text-align: justify;
 }
 
 .error{
@@ -459,6 +456,10 @@ text-decoration: none;
 #bottenlänkar {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
 }
 
 #bottenlänkar h3 {
@@ -470,14 +471,16 @@ text-decoration: none;
 #bottenlänkar .nav-item {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    
     margin: 0 10px;
+   
 }
 
 #bottenlänkar ul {
     list-style-type: none;
     padding-left: 0; 
     margin: 0; 
+    text-align: justify;
 }
 
 .handelscontainer {
@@ -538,4 +541,33 @@ text-decoration: none;
     margin-bottom: 5px;
     text-align: center;
     color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+@media screen and (max-width: 1024px) {
+    .items{
+        flex: 1 1 calc(50% - 20px); /* Varje objekt tar upp halva bredden på skärmar mindre än 1024px */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item {
+        flex: 1 1 100%; 
+    }
+    .circle-container {
+        width: 45%; 
+    }
+    .sok input {
+        width: 70%; 
+    }
+
+    .sok button {
+    display: none;
+       
+    }
+    #header-img img {
+        max-width: 100%; 
+        height: auto; 
+      }
+
 }
