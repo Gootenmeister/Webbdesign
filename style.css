@@ -21,8 +21,12 @@ body {
     max-width: 1400px;
     margin: 20px auto;
     padding: 20px;
- background-color:rgb(0 0 0 0); 
+    background-color:rgb(0 0 0 0); 
     box-shadow: 0 0 10px #0000001a;
+}
+
+.root img{
+    margin-right: 20px auto;
 }
 
 h1{
@@ -76,8 +80,6 @@ margin-bottom: -2rem;
     color: white;
     border: 2px solid #272727;
     margin: .02rem;
-    
-    
 }
 
 .sok input {
@@ -92,7 +94,6 @@ margin-bottom: -2rem;
     height: 38px;
     border-radius: 50%;
     font-size: 1rem;
-    text-align: center;
 }
 
 input {
@@ -152,7 +153,6 @@ nav {
 }
 
 @media (max-width: 943px) {
-
     .sok{
         display: flex;
         justify-content: flex-end;
@@ -241,16 +241,13 @@ nav {
 }
 
 #header-img {
-    display: block;
     margin: 3rem;
     padding: 0 2 0 2;
     text-align: center;
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
-    opacity: 0,95;
-
-
 }
+
 #contact-header {
     font-style: italic;
     text-decoration: underline;
@@ -307,15 +304,17 @@ a:hover {
 .items{
     flex: 1 1 calc(33.333% - 20px); 
     box-sizing: border-box;
-    padding: 20px;
     background-color: #424242;
     color: #ffffff;
-    margin: 10px;
-    border-radius: 8px;
-    
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
 }
+
 .items li{
-    list-style-type: none;
+    text-align: left;
 
 }
 @media screen and (max-width: 1024px) {
@@ -412,6 +411,10 @@ text-decoration: none;
     margin-bottom: 5px; 
 }
 
+#omOss{
+    margin-left: 200px;
+    margin-right: 200px;
+}
 
 #omOss h1 {
     font-size: 32px; 
@@ -423,7 +426,6 @@ text-decoration: none;
 #omOss h2 {
     font-size: 24px; 
     color: #fff; 
-    margin-top: 20px; 
     text-align: center;
 }
 
@@ -431,7 +433,7 @@ text-decoration: none;
     font-size: 16px; 
     line-height: 1.5; 
     margin-bottom: 15px; 
-    text-align: left;
+    text-align: center;
 }
 
 .error{
@@ -443,13 +445,12 @@ text-decoration: none;
     justify-content: space-between;
     align-items: flex-start; 
     margin: 40px 0 20px 0;
-    margin-top: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 #bottenlänkar h3 {
-    margin: 0;
     color: white;
+    margin: 0;
     padding: 0;
 }
 
@@ -518,11 +519,9 @@ text-decoration: none;
 
 }
 
-#personalrubrik h1 {
-
+.rubrik-underline h1 {
     margin-top: 125px;
     margin-bottom: 5px;
     text-align: center;
     color: white;
-
 }

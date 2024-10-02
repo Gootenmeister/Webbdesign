@@ -89,3 +89,13 @@ summary{
     background-color: red;
     pointer-events: none;
 }
+
+.roterande{
+    display: inline-block;
+    transition: transform 0.5s ease;
+}
+
+.roterande:hover{
+    transform: rotate(360deg);
+}
+
