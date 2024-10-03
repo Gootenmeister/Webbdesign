@@ -36,16 +36,6 @@ h1{
     margin: 4rem;
 }
 
-h2{
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-
-h3{
-    font-size: 1.5rem;
-    color: #ffffff;
-}
-
 .title-bold{
     font-size: 1.3rem;
     font-weight: bold;
@@ -213,6 +203,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+    text-align: ;
 }
 
 .specs-cell{
@@ -223,7 +214,7 @@ nav {
 }
 
 .specs-cell-text{
-    color: white;
+    color: rgba(255, 255, 255, 0.858);
 }
 
 .specs-img{
@@ -364,7 +355,7 @@ a:hover {
     width: 100px;
     height: 100px;
     color: white;
-    border-radius: 50%;
+    border-radius: 50% 30% 50%;
     font-size: 40px;
     font-weight: bold;
     text-decoration: none;
@@ -372,24 +363,19 @@ a:hover {
 }
 
 .circle#G {
-    background-color: #00ff00;
+    background-color: #6f8f6f;
 }
 
 .circle#R {
-    background-color: #ff0000;
+    background-color: #d57575;
 }
 
 .circle#A {
-    background-color: #e6e600;
+    background-color: #9f9f69;
 }
 
 .circle#K {
-    background-color: #b92525;
-}
-
-.circle:hover {
-    background-color: #aaaaaa;
-    cursor: pointer;
+    background-color: #4e2c2c;
 }
 
 .circle-text h3 {
@@ -397,12 +383,14 @@ a:hover {
 }
 
 .circle-text p {
-    text-align: justify; /* Gör texten justify */
+    text-align: justify;
     margin-bottom: 10px;
-    text-align: right;
-}
-
   
+}
+.circle:hover {
+    background-color: #720e0e;
+    cursor: pointer;
+}
 .Välkomst-meddelande h1 {
     color: #fff;
     font-family: 'Arial', sans-serif;
@@ -431,14 +419,14 @@ a:hover {
 
 #omOss h1 {
     font-size: 32px; 
-    color: #fff; 
+    color: #bab560; 
     margin-bottom: 20px; 
     text-align: center;
 }
 
 #omOss h2 {
     font-size: 24px; 
-    color: #fff; 
+    color: #bab560; 
     text-align: center;
 }
 

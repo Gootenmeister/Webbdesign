@@ -83,3 +83,13 @@ script.onload = function() {
     }
 };
 document.head.appendChild(script);
+
+// länkar bilderna till sig sjläv
+document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll(".selfLinkImage");
+    images.forEach(function(image) {
+        image.addEventListener("click", function() {
+            window.location.href = image.src;
+        });
+    });
+  });

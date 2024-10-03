@@ -1,14 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
     <script src="adminKayhan.js" defer></script>
+    <script src="adminKayhanjson.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="adminKayhan.css">
     <title>Kayhans sida</title>
 </head>
 <body>
-    <h1>Title</h1>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
+        </header>
+        <nav>
+          <div class="burger-menu" onclick="toggleMenu()">
+          <!--burger icon -->
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <ul class="menu" id="menu">
+              <li><a href="/index.html">E-Handel</a></li>
+              <li><a href="/index.html">Personal</a></li>
+              <li><a href="/contact.html">Kontakta support</a></li>
+              <li><a href="#minaProjeckt">Projekt</a></li>
+          </ul>
+      </nav>
+
+
+
+<div class="omMig">
+  <img id="minBild" src="bild0.jpg" alt="en ekonom">
+        <p id="omMig">Jag är ekonomiansvarig på GRAK med över sju års erfarenhet inom ekonomi. Med en bakgrund i företagsekonomi brinner jag för budgetering och kostnadskontroll. Min erfarenhet omfattar allt från finansiell analys och rapportering till strategisk planering och effektivisering av ekonomiska processer. Jag strävar alltid efter att optimera resurser och säkerställa ekonomisk stabilitet för företaget. Med min noggrannhet och analytiska förmåga bidrar jag till att skapa en hållbar och lönsam verksamhet.
+          <br> <br>
+          Vid frågor och funderingar vänligen Kontakta oss!</p>
+    
+      </div>
+      
+        <ul class="menu" id="menu1">
+          <li><a href="/index.html">E-Handel</a></li>
+          <li><a href="/contact.html">Kontakta support</a></li>
+      </ul>
+      
+      
+     
+        <!-- Bildspel -->
+        <div class="slider">
+            <div class="image">
+                <img src="bild1.jpeg" alt="Matematiska beräkning">
+            </div>
+            <div class="image">
+                <img src="bild2.jpg" alt="skattebetalning">
+            </div>
+            <div class="image">
+                <img src="bild3.jpg" alt="statistik">
+            </div>
+            <div class="image">
+              <img src="bild4.jpg" alt="miniräknare">
+          </div>
+          <div class="image">
+            <img src="bild5.jpg" alt="ekvationer">
+        </div>
+            <div class="button">
+                <a onclick="nastaBild(-1)" class="prev">❮</a>
+                <a onclick="nastaBild(1)" class="next">❯</a>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="nuvarandeSlide(1)"></span>
+                <span class="dot" onclick="nuvarandeSlide(2)"></span>
+                <span class="dot" onclick="nuvarandeSlide(3)"></span>
+                <span class="dot" onclick="nuvarandeSlide(4)"></span>
+                <span class="dot" onclick="nuvarandeSlide(5)"></span>
+            </div>
+        </div>
+
+        <!-- Mina skills -->
+        <div class="skills">
+          <h2>Mina Skills</h2>
+          <div class="skills-area">
+              <div class="skill">
+                  <div class="skill-title">Revisor</div>
+                  <div class="skill-bar"></div>
+                  <div class="Revisor skill-fill">
+                      <span class="skill-procent">85%</span>
+                  </div>
+              </div>
+              <div class="skill">
+                  <div class="skill-title">Affärsjuridik</div>
+                  <div class="skill-bar"></div>
+                  <div class="affarsjuridik skill-fill">
+                      <span class="skill-procent">63%</span>
+                  </div>
+              </div>
+              <div class="skill">
+                  <div class="skill-title">Ekonomisk rådgivning</div>
+                  <div class="skill-bar"></div>
+                  <div class="ek_radgivning skill-fill">
+                      <span class="skill-procent">70%</span>
+                  </div>
+              </div>
+              <div class="skill">
+                  <div class="skill-title">Projektledning</div>
+                  <div class="skill-bar"></div>
+                  <div class="projektledning skill-fill">
+                      <span class="skill-procent">85%</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <!--Vue -->
+        <div id="app">
+          <h1>Mina Projekt</h1>
+          <div class="minaProjeckt" id="minaProjeckt">
+            
+            <div class="form">
+              <h2>Beräkna Momsen</h2>
+              <p>Med hjälp av verktyget Beräkna Momsen kan användare enkelt beräkna slutpriset inklusive moms. Genom att ange priset utan moms och välja önskad momssats, kan verktyget snabbt och exakt visa det totala priset.</p>
+              <form>
+                <div class="form-group">
+                  <label for="pris">Pris (utan moms)</label>
+                  <input type="number" id="pris" v-model="pris" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="moms">Moms (%)</label>
+                  <select id="moms" v-model="moms" class="form-control">
+                    <option v-for="momsOption in momsOptions" :value="momsOption.value">{{ momsOption.text }}</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="slutpris">Slutpris</label>
+                  <input type="number" id="slutpris" v-model="slutpris" class="form-control">
+                </div>
+                <button type="button" @click="berakna()" class="btn btn-primary">Beräkna</button>
+              </form>
+            </div>
+          
+            <div class="ekonomiskaData">
+              <h2>Ekonomiska Årsredovisning</h2>
+              <p>Ekonomiska Årsredovisning är ett system som gör det möjligt för användare att visa ekonomiska data för olika år. Genom att välja ett specifikt år kan användaren se detaljerad information om försäljning, kostnader och vinst för det valda året, vilket underlättar ekonomisk analys och planering.</p>
+              <label for="arVald">Välj År:</label>
+              <select id="arVald" v-model="valdAr" @change="fetchData">
+                <option v-for="data in financialData" :key="data.ar" :value="data.ar">{{ data.ar }}</option>
+              </select>
+              <div v-if="valdData">
+                <h2>Årsredovisning för {{ valdAr }}</h2>
+                <p>Försäljning: {{ valdData.forsaljning }}</p>
+                <p>Kostnader: {{ valdData.kostnader }}</p>
+                <p>Vinst: {{ valdData.vinst }}</p>
+              </div>
+            </div>
+          
+            <div class="vader">
+              <h2>Väder</h2>
+              <p>Med applikationen Väder kan användare söka och visa väderinformation för olika städer. Genom att skriva in stadens namn får användaren aktuell information om temperatur och väderförhållanden, vilket är användbart för att planera dagliga aktiviteter.</p>
+              <label for="stadSök">Sök Stad:</label>
+              <input type="text" id="stadSök" v-model="sökTerm" @input="sökStad" placeholder="Skriv stadens namn">
+              <div v-if="felMeddelande" class="fel-meddelande">{{ felMeddelande }}</div>
+              <div v-if="valdVäder">
+                <h2>Väder i {{ valdVäder.city }}</h2>
+                <p>Temperatur: {{ valdVäder.temperature }}°C</p>
+                <p>Väder: {{ valdVäder.condition }}</p>
+              </div>
+            </div>
+          
+            <div class="fakturor">
+              <h2>Fakturahantering</h2>
+              <p>Fakturahantering är ett system som hjälper att hantera och söka fakturor. Genom att söka baserat på företagsnamn kan användaren se detaljer som typ av faktura, belopp och status, vilket underlättar administration och uppföljning av betalningar.</p>
+              <label for="sökFaktura">Sök Faktura:</label>
+              <input type="text" id="sökFaktura" v-model="sökTerm2" @input="sökFaktura" placeholder="Skriv företagets namn">
+              <div v-if="felMeddelande2" class="fel-meddelande2">{{ felMeddelande2 }}</div>
+              <table id="fakturaTabel">
+                <tr>
+                  <th>Typ</th>
+                  <th>Företag</th>
+                  <th>Belopp</th>
+                  <th>Status</th>
+                  <th>Ta bort</th>
+                </tr>
+                <tr v-for="faktura in filtreradeFakturor" :key="faktura.id">
+                  <td>{{ faktura.typ }}</td>
+                  <td>{{ faktura.företag }}</td>
+                  <td>{{ faktura.belopp }} SEK</td>
+                  <td>{{ faktura.status }}</td>
+                  <td><input type="checkbox" @change="taBortFaktura(faktura.id)"></td>
+                </tr>
+              </table>
+            </div>
+          
+            <div class="uppdateraPris">
+              <h2>Pris uppdatering</h2>
+              <p>Med verktyget Pris uppdatering, kan vi enkelt uppdatera priser på produkter. Genom att se en lista över produkter och använda uppdateringsfunktionen kan vi snabbt justera priserna, vilket är viktigt för att hålla produktinformationen aktuell och korrekt</p>
+              <table id="produktTabel">
+                <tr>
+                  <th>Produkt</th>
+                  <th >Pris</th>
+                  <th>Uppdatera Pris</th>
+                </tr>
+                <tr v-for="produkt in produkter" :key="produkt.id">
+                  <td>{{ produkt.namn }}</td>
+                  <td>{{ produkt.pris }} SEK</td>
+                  <td><button @click="uppdateraPris(produkt.id)">Uppdatera</button></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          </div>
+          <footer>
+            <form a="/index.html">
+                <button>Tillbaka</button>
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
