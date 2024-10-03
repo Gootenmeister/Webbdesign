@@ -16,122 +16,65 @@
             <img src="../bilder/sddefault.png" class="banner-img">
 
             <div class="banner-text">
-                <h1>Välkommen till min sida</h1>
-                <p>Headline 1</p>
+                <h1>Välkommen till min sida!</h1>
             </div>
         </div>
         
+        <br>
+
         <p>
             <a href="../index.html">← Tillbaka till huvudsida</a>
         </p>
 
         <br>
         
-        <div id="profilbild">
-            <img class="roterande" src="../bilder/Snorkel_cat.png" alt="" usemap="#image-map" width="351" height="351px">
-
-            <!-- <div class="overlay" id="sec1"></div>
-            <div class="overlay" id="sec2"></div>
-            <div class="overlay" id="sec3"></div>
-
-            <div class="map">
-                <map name="image-map">
-                    <area shape="rect" coords="50,50,150,150" href="#section-1" alt="Område 1" data-overlay="sec1">
-                    
-                    <area shape="circle" coords="300,200,50" href="#section-2" alt="Område 2" data-overlay="sec2">
-                    
-                    <area shape="poly" coords="100,50,200,50,200,70,100,70" href="#section-3" alt="Område 3" data-overlay="sec3">
-                </map>
-            </div> -->
+        <div class="about-container">
+            <div class="profilbild">
+                <img class="roterande" src="../bilder/Snorkel_cat.png" alt="Profilbild">
+            </div>
+            
+            <div class="about-me underline">
+            <h3>Här har du lite information om mig!</h2>
+                
+            <p>Hej! Mitt namn är Rikard Söderek, och jag är logistikansvarig på GRAK, ett ledande företag inom datorförsäljning.
+                Med flera års erfarenhet inom logistik och försörjningskedjan, ser jag till att våra produkter levereras i tid och med högsta precision.
+                Mitt mål är att optimera våra processer, säkerställa att våra lager är välfyllda och att våra kunder får sina beställningar utan problem.
+                <br><br>
+                På GRAK arbetar vi med de senaste teknologierna inom datorhårdvara, och jag brinner för att se till att våra produkter når rätt plats, i rätt tid, 
+                och med högsta effektivitet. Jag strävar alltid efter att förbättra våra interna processer och driva tillväxt genom smart logistik.
+                <br><br>
+                När jag inte koordinerar logistikflödet tycker jag om att hålla mig uppdaterad om nya tekniska innovationer inom datorindustrin
+                och hur vi kan implementera dessa i vårt arbete.</p>
+            </div>
         </div>
 
         <br>
 
-        <div class="text-ruta-1">
-            <h3>Textrubrik 1</h2>
-            
-            <p>Textrad 1</p>
-            <p>Textrad 2</p>
-            <p>Textrad 3</p>
-            <p>Textrad 4</p>
-        </div>
+        <div class="projects-container">
+            <h3>Tidigare projekt</h3>
 
-        <div class="text-ruta-2">
-            <h3>Textrubrik 2</h3>
-            
-            <p>Textrad 1</p>
-            <p>Textrad 2</p>
-            <p>Textrad 3</p>
-            <p>Textrad 4</p>
-            <p>Textrad 5</p>
-        </div>
-
-        <div class="text-ruta-3">
-            <h3>Textrubrik 3</h3>
-            
-            <div class="project-list">
-                <div class="item-1">
-                    <details>
-                        <summary>Projekt 1</summary>
-                        <p>Text Text Text Text Text Text Text Text </p>
-                    </details>
-                </div>
-                
-                <br>
-
-                <div class="item-2">
-                    <details>
-                        <summary>Projekt 2</summary>
-                        <p>Text Text Text </p>
-                    </details>
+            <div id="projects-app">
+                <div class="project-item" v-for="project in projectList" :key="project.name">
+                    <h3 class="project-title">{{ project.name }}</h3>
+                    <p class="project-type">{{ project.type }}</p>
+                    <p class="project-description">{{ project.description }}</p>
+                    <p class="project-date">{{ project.date }}</p>
                 </div>
             </div>
+        </div>
         
-          <div class="sections">
-            <section id="section-1">
-                <h2>Sektion 1</h2>
-                <p>Detta är innehållet på sektion 1</p>
-            </section>
-            
-            <section id="section-2">
-                <h2>Sektion 2</h2>
-                <p>Detta är innehållet på sektion 2</p>
-            </section>
-            
-            <section id="section-3">
-                <h2>Sektion 3</h2>
-                <p>Detta är innehållet på sektion 3</p>
-            </section>
+        <br>
+
+        <div class="picture-container">
+            <h3>Bildspel</h3>
+            <p>Text</p>
         </div>
 
-            <img src="" alt="">
-        </div>
+        <br>
 
-        <div class="text-ruta-4">
-            <h3>Textrubrik 4</h3>
-
-            <ul class="project-list">
-                <p>Textrad 1</p>
-
-            <br>
-
-                <p>Projekt 1</p>
-                <p>Beskrivning 1</p>
-            <br>
-                <p>Projekt 2</p>
-                <p>Beskrivning 2</p>
-            <br>
-                <p>Projekt 3</p>
-                <p>Beskrivning 3</p>
-            <br>
-                <p>Projekt 4</p>
-                <p>Beskrivning 4</p>
-            <br>
-
-                <p>Projekt 5</p>
-                <p>Beskrivning 5</p>
-            </ul>
-
+        <div class="text-ruta-3">
+            <h3>Text</h3>
+            <p>Text</p>
         </div>
 
     </div>

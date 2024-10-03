@@ -1,0 +1,35 @@
+{
+    "projects": [
+      {
+        "name": "AI-Powered Chatbot",
+        "type": "Software Development",
+        "description": "A conversational AI chatbot designed to help users with various tasks using natural language processing.",
+        "date": "2024-02-14"
+      },
+      {
+        "name": "Sustainable Energy Initiative",
+        "type": "Environmental",
+        "description": "A project focused on developing renewable energy sources for local communities.",
+        "date": "2024-07-22"
+      },
+      {
+        "name": "E-Commerce Platform",
+        "type": "Web Development",
+        "description": "Building a comprehensive online platform for small businesses to sell their products.",
+        "date": "2024-05-30"
+      },
+      {
+        "name": "Mobile Health App",
+        "type": "Mobile Application",
+        "description": "A mobile app aimed at tracking and improving users' health metrics using smart devices.",
+        "date": "2024-10-03"
+      },
+      {
+        "name": "Smart Home Automation",
+        "type": "IoT",
+        "description": "An Internet of Things (IoT) project aimed at creating an automated smart home system for improved comfort and energy efficiency.",
+        "date": "2024-11-17"
+      }
+    ]
+  }
+  

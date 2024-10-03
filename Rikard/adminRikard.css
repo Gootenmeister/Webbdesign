@@ -48,6 +48,8 @@ a:hover{
     position: relative;
     width: 100%;
     height: 300px;
+    border-style: solid;
+    border-radius: 5px;
     overflow: hidden;
 }
 
@@ -69,25 +71,24 @@ a:hover{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-#profilbild{
+.about-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profilbild{
+    height: 251px;
+    width: 251px;
+    background-color: rgb(154, 150, 150);
+    border-style: solid;
+    border-color: white;
     border-radius: 10%;
 }
 
-summary{
-    cursor: pointer;
-}
-
-.sections{
-    color: green;
-}
-
-.map{
-    color: red;
-}
-
-.overlay{
-    background-color: red;
-    pointer-events: none;
+.profilbild img{
+    height: 251px;
+    width: 251px;
 }
 
 .roterande{
@@ -99,3 +100,50 @@ summary{
     transform: rotate(360deg);
 }
 
+.about-me h3{
+    padding: 0;
+    margin: 0;
+}
+
+.about-me p{
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    margin: 10px;
+    padding: 10px;
+}
+
+.underline h1{
+    margin-top: 125px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.project{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project-title{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.project-type{
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.project-description{
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.project-date{
+    font-size: 0.9em;
+    color: gray;
+}
