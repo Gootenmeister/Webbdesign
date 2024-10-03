@@ -1,0 +1,183 @@
+{
+    
+    "moms":[
+        {
+          "value": 6,
+          "text": "6%"
+        },
+        {
+          "value": 20,
+          "text": "20%"
+        },
+        {
+          "value": 25,
+          "text": "25%"
+        }
+      ],
+  
+      "financialData": [
+    {
+      "ar": 2023,
+      "forsaljning": 1500000,
+      "kostnader": 1200000,
+      "vinst": 300000
+    },
+    {
+      "ar": 2022,
+      "forsaljning": 1400000,
+      "kostnader": 1100000,
+      "vinst": 300000
+    },
+    {
+      "ar": 2021,
+      "forsaljning": 1300000,
+      "kostnader": 1000000,
+      "vinst": 300000
+    },
+    {
+      "ar": 2020,
+      "forsaljning": 1200000,
+      "kostnader": 900000,
+      "vinst": 300000
+    },
+    {
+      "ar": 2019,
+      "forsaljning": 1100000,
+      "kostnader": 800000,
+      "vinst": 300000
+    }
+  ],
+  "vaderData": [
+  {
+    "city": "Stockholm",
+    "temperature": 15,
+    "condition": "Soligt"
+  },
+  {
+    "city": "Göteborg",
+    "temperature": 12,
+    "condition": "Molnigt"
+  },
+  {
+    "city": "Malmö",
+    "temperature": 14,
+    "condition": "Regnigt"
+  },
+  {
+    "city": "Uppsala",
+    "temperature": 13,
+    "condition": "Soligt"
+  },
+  {
+    "city": "Örebro",
+    "temperature": 11,
+    "condition": "Snö"
+  },
+  {
+    "city": "Linköping",
+    "temperature": 10,
+    "condition": "Molnigt"
+  },
+  {
+    "city": "Västerås",
+    "temperature": 12,
+    "condition": "Regnigt"
+  },
+  {
+    "city": "Helsingborg",
+    "temperature": 13,
+    "condition": "Soligt"
+  },
+  {
+    "city": "Norrköping",
+    "temperature": 11,
+    "condition": "Molnigt"
+  },
+  {
+    "city": "Lund",
+    "temperature": 14,
+    "condition": "Regnigt"
+  }
+  ],
+  "fakturor": [
+    {
+      "id": 1,
+      "typ": "Leverantör",
+      "företag": "ABC AB",
+      "belopp": 5000,
+      "status": "Obetald"
+    },
+    {
+      "id": 2,
+      "typ": "Hyresvärd",
+      "företag": "Fastighetsbolaget AB",
+      "belopp": 12000,
+      "status": "Betald"
+    },
+    {
+      "id": 3,
+      "typ": "El",
+      "företag": "Elbolaget AB",
+      "belopp": 1500,
+      "status": "Obetald"
+    },
+    {
+      "id": 4,
+      "typ": "Försäkring",
+      "företag": "Försäkringsbolaget AB",
+      "belopp": 3000,
+      "status": "Betald"
+    },
+    {
+      "id": 5,
+      "typ": "Leverantör",
+      "företag": "XYZ AB",
+      "belopp": 7000,
+      "status": "Obetald"
+    }
+  ],
+"produkter": [
+  {
+    "id": 1,
+    "namn": "NVIDIA GeForce RTX 3080",
+    "pris": 12000
+  },
+  {
+    "id": 2,
+    "namn": "AMD Ryzen 9 5900X",
+    "pris": 8000
+  },
+  {
+    "id": 3,
+    "namn": "Corsair Vengeance LPX 32GB RAM",
+    "pris": 2500
+  },
+  {
+    "id": 4,
+    "namn": "Western Digital Black SN750 1TB NVMe SSD",
+    "pris": 2000
+  },
+  {
+    "id": 5,
+    "namn": "ASUS ROG Zephyrus G14",
+    "pris": 25000
+  },
+  {
+    "id": 6,
+    "namn": "Logitech G502 Lightspeed Mus",
+    "pris": 1500
+  },
+  {
+    "id": 7,
+    "namn": "HyperX Cloud II Headset",
+    "pris": 2000
+  },
+  {
+    "id": 8,
+    "namn": "Razer BlackWidow Lite Tangentbord",
+    "pris": 2500
+  }
+]
+
+    
+  }
