@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Byggde supportsidan för GRAK Gaming!",
+        "description": "Ett av de mest nyligen utförda projekten jag gjort är supportsidan för GRAK-gaming AB, och är skrivet i diverse språk och kan hittas på sidan {sida} ",
+        "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "name": "asdpasdpap",
+        "description": "Beskrivning av projekt 2.",
+        "languages": ["Bajs", "Fnask"]
+    },
+    {
+        "name": "Projekt3",
+        "description": "Beskrivning av projekt 3.",
+        "languages": ["Java", "Spring"]
+    },
+    {
+        "name": "Projekt4",
+        "description": "Beskrivning av projekt 4.",
+        "languages": ["Ruby", "Rails"]
+    },
+    {
+        "name": "Projekt5",
+        "description": "Beskrivning av projekt 5.",
+        "languages": ["PHP", "Laravel"]
+    }
+]

@@ -13,19 +13,14 @@
         <h1>&nbsp;&gt;&nbsp;Gustav's page<span class="blink">_</span></h1>
     </header>
     <main class="root">
-    <div id="app">
         <div id="home">
             <h2>Hej! Gustav var namnet!</h2>
-            <p>jag är x, jag gör y saker och ibland också z!</p>
+            <p>Utveckling är mitt mellannamn! Jag har länge hållit på med utveckling med olika språk - en del exempel på språk är:<br>C (och lite C++), HTML (med css), JavaScript (med Vue som framework) och Java för diverse appar!<br><br><br>
             <img id="pfp" src="pfp.jpg" alt="bild på gust">
         </div>  
-        <div>
-            <p>{{ message }}</p>
-        <button @click="reverseMessage">Vänd texten</button>
-        </div>
-    </div>
+        
         <div id="about">
-            <h1 id="skills">Skills</h1>
+            <h1 id="skills">Skills (click me)</h1>
     <div id="skillbars" class="hidden">
         <div class="skillbar">
             <div class="skillbar-title">HTML</div>
@@ -45,12 +40,16 @@
         </div>
     </div>
        
-        <div id="contact">
-            <h2>Övrigt</h2>
-            <p>Hokuspokus.</p>
-            <br><br><br><br><br>
-
+    <div id="app">
+        <h2>Projekt</h2>
+        <p>Här är några projekt som jag tidigare har jobbat med - samt vilka språk dessa är skrivna i!</p>
+        
+        <div v-for="project in projects" :key="project.name">
+          <h3>{{ project.name }}</h3>
+          <p>{{ project.description }}</p>
+          <p>Språk: {{ project.languages.join(', ') }}</p>
         </div>
+      </div>
     </main>
     <footer class="footer">
         <div class="gif-grid">
