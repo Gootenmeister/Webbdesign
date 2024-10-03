@@ -71,7 +71,6 @@ const app = Vue.createApp({
         uppdateraPris(id) {
           const produkt = this.produkter.find(p => p.id === id);
           if (produkt) {
-            // Här kan du lägga till logik för att uppdatera priset, t.ex. genom att visa en prompt
             const nyttPris = prompt(`Ange nytt pris för ${produkt.namn}:`, produkt.pris);
             if (nyttPris !== null) {
               produkt.pris = parseFloat(nyttPris);
