@@ -52,17 +52,17 @@
 
         <div class="projects-container">
             <h3>Tidigare projekt</h3>
-
+        
             <div id="projects-app">
                 <div class="project-item" v-for="project in projectList" :key="project.name">
-                    <h3 class="project-title">{{ project.name }}</h3>
-                    <p class="project-type">{{ project.type }}</p>
-                    <p class="project-description">{{ project.description }}</p>
-                    <p class="project-date">{{ project.date }}</p>
+                    <h3 class="project-title">Titel: {{ project.name }}</h3>
+                    <p class="project-type">Typ: {{ project.type }}</p>
+                    <p class="project-description">Beskrivning: {{ project.description }}</p>
+                    <p class="project-date">Datum: {{ project.date }}</p>
                 </div>
             </div>
         </div>
-        
+
         <br>
 
         <div class="picture-container">
