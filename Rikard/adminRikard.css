@@ -11,10 +11,10 @@ body {
 
 /* Format */
 .root{
-    max-width: 1400px;
+    max-width: 1450px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #323232;
+    background-color: #393939;
     box-shadow: 0 0 10px #0000001a;
 }
 
@@ -72,8 +72,9 @@ a:hover{
 }
 
 .about-container{
+    position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
 }
 
@@ -121,11 +122,32 @@ a:hover{
     margin-right: 100px;
 }
 
-.project{
-    border: 1px solid #ccc;
+@media (max-width: 800px) {
+    .profilbild {
+        position: relative; /* Återställ positionen på små skärmar */
+        margin-bottom: 10px; /* Lägg till marginal under profilbilden */
+    }
+
+    .about-me {
+        margin-left: 0; /* Ta bort vänstermarginal på små skärmar */
+        padding: 10px; /* Håll padding */
+    }
+}
+
+.project-item{
+    height: auto;
+    width: 500px;
+    background-color: #555555;
+    border-color: #ccc;
+    border-style: solid;
     border-radius: 5px;
+    margin: 10px;
     padding: 10px;
-    margin-bottom: 10px;
+}
+
+.project-item:hover{
+    transform: scale(1.06);
+    transition: 0.1s ease-in-out;
 }
 
 .project-title{
@@ -145,5 +167,5 @@ a:hover{
 
 .project-date{
     font-size: 0.9em;
-    color: gray;
+    color: darkgrey;
 }
