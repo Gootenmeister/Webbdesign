@@ -27,7 +27,7 @@ document.getElementById('bakåt').addEventListener('click', () => {
     visaBild(nuvarandeindex);
 });
 
-// Vue.js-applikation för att hantera mina projekt
+// vue.js-applikation för att hantera mina projekt
 const { createApp } = Vue;
 
 createApp({
