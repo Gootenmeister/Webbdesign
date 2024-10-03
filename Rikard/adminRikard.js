@@ -1,3 +1,21 @@
+//Skill bar
+window.addEventListener("load", () => {
+    const skillLevels = document.querySelectorAll(".skill-level");
+
+    skillLevels.forEach(skill => {
+        const level = skill.getAttribute("style").match(/width: (\d+)%/)[1];
+        skill.style.width = "0%";
+
+    setTimeout(() => {
+        skill.style.width = `${level}%`;
+    }, 500);
+
+    })
+})
+
+
+
+// Bildspel
 const imageCount = 7;
 const imageFolder = 'bildspel/';
 let currentIndex = 0;
@@ -15,26 +33,18 @@ function updateImage() {
     imageElement.src = getImagePath(currentIndex);
 }
 
-// Hantera föregående knapptryckning
 prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + imageCount) % imageCount;
     updateImage();
 });
 
-// Hantera nästa knapptryckning
 nextButton.addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % imageCount; // Cirkulera till början
+    currentIndex = (currentIndex + 1) % imageCount;
     updateImage();
 });
-
-// Initial bildvisning
 updateImage();
 
-
-
-
-
-
+//Vue
 const app = Vue.createApp({
     data() {
         return {

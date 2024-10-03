@@ -22,9 +22,9 @@
         
         <br>
 
-        <p>
-            <a href="../index.html">← Tillbaka till huvudsida</a>
-        </p>
+            <p>
+                <a href="../index.html">← Tillbaka till huvudsida</a>
+            </p>
 
         <br>
         
@@ -34,7 +34,7 @@
             </div>
             
             <div class="about-me underline">
-            <h3>Här har du lite information om mig!</h2>
+            <h3>Här har du lite information om mig</h2>
                 
             <p>Hej! Mitt namn är Rikard Söderek, och jag är logistikansvarig på GRAK, ett ledande företag inom datorförsäljning.
                 Med flera års erfarenhet inom logistik och försörjningskedjan, ser jag till att våra produkter levereras i tid och med högsta precision.
@@ -48,15 +48,52 @@
             </div>
         </div>
 
-        <div class="skill-bar">
-            <h3>Text</h3>
-            <p>Text</p>
+        <div class="skill-bar-container">
+            <h3>Min nivå av kunskap inom webbutveckling</h3>
+            
+            <div class="skills-container">
+                <div class="skill">
+                    <p>HTML</p>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-level-high" style="width: 95%;"></div>
+                        <span class="skill-procent">95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill">
+                    <p>CSS</p>
+                
+                    <div class="skill-bar">
+                        <div class="skill-level-high" style="width: 80%;"></div>
+                        <span class="skill-procent">80%</span>
+                    </div>
+                </div>
+             
+                <div class="skill">
+                    <p>JavaScript</p>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-level-medium" style="width: 45%;"></div>
+                        <span class="skill-procent">45%</span>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <p>Vue.js</p>
+                    
+                    <div class="skill-bar">
+                        <div class="skill-level-low" style="width: 15%;"></div>
+                        <span class="skill-procent">15%</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <br>
 
         <div class="projects-container">
-            <h3>Tidigare projekt</h3>
+            <h3>Tidigare projekt:</h3>
         
             <div id="projects-app">
                 <div class="project-item" v-for="project in projectList" :key="project.name">
@@ -80,7 +117,6 @@
                 <button id="next-btn">→</button>
             </div>
         </div>
-
 
     </div>
 </body>
