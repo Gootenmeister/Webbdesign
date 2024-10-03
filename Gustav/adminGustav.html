@@ -10,16 +10,30 @@
 </head>
 <body>
     <header>
-        <h1>&nbsp;&gt;&nbsp;Gustav's page<span class="blink">_</span></h1>
+        <h1 id="header-txt">&nbsp;&gt;&nbsp;Gustav's page<span class="blink">_</span></h1>
     </header>
     <main class="root">
-        <div id="home">
-            <h2>Hej! Gustav var namnet!</h2>
-            <p>Utveckling är mitt mellannamn! Jag har länge hållit på med utveckling med olika språk - en del exempel på språk är:<br>C (och lite C++), HTML (med css), JavaScript (med Vue som framework) och Java för diverse appar!<br><br><br>
-            <img id="pfp" src="pfp.jpg" alt="bild på gust">
-        </div>  
         
-        <div id="about">
+      <a href="../index.html" class="backplease">&lt; Tillbaka</a>      
+      <h2>Hej! Gustav var namnet!</h2>
+            <p>...och utveckling är mitt mellannamn! Jag har länge hållit på med utveckling med olika språk - en del exempel på språk är:<br>C (och lite C++), HTML (med css), JavaScript (med Vue som framework) och Java för diverse appar!<br>Ett exempel är  <a href="../contact.html">kontaktsidan</a> hos oss på GRAK!<br><br>
+            <div class="container">
+              <div class="westside">
+                <h2>En bild på mig!</h2>
+                <img class="profil-img" src="pfp.jpg" alt="bild på gust" title="Min profilbild!">
+              </div>
+              <div class="eastside">
+                 <div class="album-wrapper">
+                <h2>Mitt fotoalbum</h2>
+                <div class="slideshow-container">
+                  <button class="fltrBtn" onclick="previousImage()">&#10094;</button>
+                  <img id="albumImage" src="slideshow/1.jpg" alt="slideshow" title="Mitt bildspel!">
+                  <button class="fltrBtn" onclick="nextImage()">&#10095;</button>
+                </div>
+              </div>
+            </div>  
+            </div>
+
             <h1 id="skills">Skills (click me)</h1>
     <div id="skillbars" class="hidden">
         <div class="skillbar">
@@ -44,7 +58,30 @@
         <h2>Projekt</h2>
         <p>Här är några projekt som jag tidigare har jobbat med - samt vilka språk dessa är skrivna i!</p>
         
-        <div v-for="project in projects" :key="project.name">
+        <div>
+        <h3>Filtrera efter språk:</h3>
+          <button class="fltrBtn" @click="toggleFilterLanguage('HTML')">HTML</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('CSS')">CSS</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('JavaScript')">JavaScript</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('PHP')">PHP</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('Java')">Java</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('C')">C</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('C++')">C++</button>
+          <button class="fltrBtn" @click="toggleFilterLanguage('Python')">Python</button>
+        </div>
+  
+        <div v-if="filterLanguages.length >= 1">
+          <h3>Valda filter:</h3>
+          <ul>
+            <li v-for="language in filterLanguages" :key="language">
+              {{ language }}
+            </li>
+          </ul>
+          <button class="fltrBtn" @click="clearFilters">Rensa filter</button>
+        </div>
+  
+        <!-- visar de filtrerade projekten -->
+        <div v-for="project in filteredProjects" :key="project.name">
           <h3>{{ project.name }}</h3>
           <p>{{ project.description }}</p>
           <p>Språk: {{ project.languages.join(', ') }}</p>

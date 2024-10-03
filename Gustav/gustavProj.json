@@ -1,13 +1,13 @@
 [
     {
         "name": "Byggde supportsidan för GRAK Gaming!",
-        "description": "Ett av de mest nyligen utförda projekten jag gjort är supportsidan för GRAK-gaming AB, och är skrivet i diverse språk och kan hittas på sidan {sida} ",
+        "description": "Ett av de mest nyligen utförda projekten jag gjort är supportsidan för GRAK-gaming AB, och är skrivet i diverse språk och kan hittas på sidan.",
         "languages": ["HTML", "CSS", "JavaScript"]
     },
     {
-        "name": "asdpasdpap",
-        "description": "Beskrivning av projekt 2.",
-        "languages": ["Bajs", "Fnask"]
+        "name": "Plattformsoberoende 2D-spel",
+        "description": "Ett spel tungt inspirerat av Super Mario Bros. för NES där man springer från vänster till höger, samlar ''power-ups'', och se upp för fiender och faror på vägen mot målet! Utöver själva spelet har jag även gjort en hemsida för att ladda ned och spela spelet själv med HTML, CSS och JS och hostar sidan och filerna på en server i Sverige.",
+        "languages": ["Java", "HTML", "CSS", "JavaScript"]
     },
     {
         "name": "Prime Sieve Algoritm i C (Eratosthenes Såll)",
@@ -15,13 +15,13 @@
         "languages": ["C"]
     },
     {
-        "name": "Projekt4",
-        "description": "Beskrivning av projekt 4.",
-        "languages": ["Ruby", "Rails"]
+        "name": "En spelmotor att bygga egna nya spel i",
+        "description": "Efter utvecklingen av mitt tidigare spel Kom jag på att man kan bygga sina egna spelmotorer för att kunna utveckla mer avancerade spel i med färdiga byggdelar som fysik, kollisionsdetektion, objekt-culling, mm. för framtida spelutvecklingsäventyr!",
+        "languages": ["C++", "Python"]
     },
     {
-        "name": "Projekt5",
-        "description": "Beskrivning av projekt 5.",
-        "languages": ["PHP", "Laravel"]
+        "name": "Ett messageboard med en användarportal och stöd för att skapa användartrådar",
+        "description": "Jag har varit på internet så länge jag kan minnas och har alltid fascinerats över sidor med tusentals användare som träffas och diskuterar delade intressen, delar filer/länkar och lär känna varandra över world wide web. Jag har samlat på mig idéer för flera olika 'features' jag önskar implementera på mitt eget diskussionsforum där användare kan mötas och dela med sig av sin information och kunskap!",
+        "languages": ["HTML", "CSS", "JavaScript", "PHP"]
     }
 ]

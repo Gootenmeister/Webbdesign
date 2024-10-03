@@ -1,7 +1,33 @@
-//skillbarAnim
+//SLIDESHOW
+const images = ['slideshow/1.jpg', 'slideshow/2.jpg', 'slideshow/3.jpg', 'slideshow/4.jpg'];
+let currentIndex = 0;
+
+function showImage(index) {
+    const albumImage = document.getElementById('albumImage');
+    albumImage.src = images[index];
+}
+
+function nextImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+        currentIndex = 0; //the end, sätt index till 0 och gå till sista
+    }
+    showImage(currentIndex);
+}
+
+function previousImage() {
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1; // Om vi går under noll, gå till sista bilden
+    }
+    showImage(currentIndex);
+}
+
+
+//SKILLBARS
 document.getElementById('skills').addEventListener('click', function() {
     const skillbars = document.getElementById('skillbars');
-    skillbars.classList.toggle('hidden');
+    skillbars.classList.toggle('hidden'); //classtoggle Hidden (skulle kunnat gjort show)
 
     const skillbarFills = document.querySelectorAll('.skillbar-fill');
     const skillbarTitles = document.querySelectorAll('.skillbar-title');
@@ -13,31 +39,36 @@ document.getElementById('skills').addEventListener('click', function() {
         
             //hol up
         setTimeout(() => {
-            const widths = ['90%', '80%', '70%', '5%']; //vals
+            const widths = ['87%', '80%', '73%', '71%']; //vals
             skillbarFills.forEach((skillbarFill, index) => {
                 skillbarFill.style.width = widths[index];
             });
-        }, 300);
+        }, 200); //delay från klick till anim (ms)
     } else {
         skillbarFills.forEach(skillbarFill => {
             skillbarFill.style.width = '0'; //döljer skillbrs
-        });
-
-        skillbarTitles.forEach(skillbarTitle => {
-            skillbarTitle.style.opacity = '0';
         });
     }
 });
 
 
-
-// VUE
-// Definiera en ny Vue-app
+//VUE BÖRJAR HÄR
 const app = Vue.createApp({
     data() {
       return {
-        projects: [] // Array där projekten från JSON kommer sparas
+        projects: [], //json arrayen
+        filterLanguages: [], //array håller filtrerade språk
       };
+    },
+    computed: {
+      filteredProjects() {
+        if (this.filterLanguages.length === 0) {
+          return this.projects; //om inget filter : visa alla projekt annars skippa denna if
+        }
+        return this.projects.filter(project =>  //om filter finns
+          project.languages.some(lang => this.filterLanguages.includes(lang))
+        );
+      }
     },
     created() {
       // Hämta JSON-fil när komponenten skapas
@@ -46,21 +77,24 @@ const app = Vue.createApp({
         .then(data => {
           this.projects = data; // Spara JSON-datan i projects-arrayen
         })
-        .catch(error => console.error('Error loading JSON:', error));
+        .catch(err => console.error('json err:', err));
     },
-    template: `
-      <div id="app">
-        <h2>Projekt</h2>
-        <p>Här är några projekt som jag tidigare har jobbat med - samt vilka språk dessa är skrivna i!</p>
-        
-        <div v-for="project in projects" :key="project.name">
-          <h3>{{ project.name }}</h3>
-          <p>{{ project.description }}</p>
-          <p>Språk: {{ project.languages.join(', ') }}</p>
-        </div>
-      </div>
-    `
-  });
+    methods: {
+      toggleFilterLanguage(language) {
+        const index = this.filterLanguages.indexOf(language);
+        if (index === -1) {
+            this.filterLanguages.push(language);
+        } else {
+            this.filterLanguages.splice(index, 1); //-del om redan finns
+        }
+      },
+      clearFilters() {
+        this.filterLanguages = []; //sätt tom filterarray när metoden anropas
+      }
+    },
   
-  // Mounta appen till elementet med id "app"
+  });
+  //todo använd push, include, som
+
+
   app.mount('#app');
