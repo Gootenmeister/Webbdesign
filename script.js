@@ -1,19 +1,9 @@
-//<menyblocks>
+//Hamburgermenu
 function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.classList.toggle("active");
 }
 
-//vi behöver inte ha DOMContentLoaded då vi har defer i html
-document.addEventListener("DOMContentLoaded", function() {
-    let images = document.querySelectorAll(".selfLinkImage");
-    images.forEach(function(image) {
-        image.addEventListener("click", function() {
-            window.location.href = image.src;
-        });
-    });
-});
-//</menyblocks>
 
 //häftig js DOM-söktool ;)
 document.getElementById('searchButton').addEventListener('click', performSearch);
@@ -76,7 +66,7 @@ function performSearch() {
 }
 
 //tar bort <span class="highlight"> utan att påverka texten
-//anropas vid ny sökning rad 43
+//anropas vid ny sökning rad 33
 function removeHighlights() {
     const highlightedElements = document.querySelectorAll('.highlight');
     highlightedElements.forEach(element => {
