@@ -10,9 +10,9 @@
         "languages": ["Bajs", "Fnask"]
     },
     {
-        "name": "Projekt3",
-        "description": "Beskrivning av projekt 3.",
-        "languages": ["Java", "Spring"]
+        "name": "Prime Sieve Algoritm i C (Eratosthenes Såll)",
+        "description": "Efter en lång diskussion med en vän kom vi fram till att skapa en algoritm för att lista och sortera primtal i storleksordning. Jag hittade Eratosthenes Primtalssåll efter en google-sökning och bestämde mig att göra ett väloptimerat C-program då jag hade hört att det var snabbare efter kompileringstid i ''low level'' språk än tolkade språk.",
+        "languages": ["C"]
     },
     {
         "name": "Projekt4",
