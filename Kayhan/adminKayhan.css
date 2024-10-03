@@ -89,6 +89,8 @@ nav {
   width: 25%;
   float: left;
   padding: 15px;
+  
+
 }
 
 #omMig{
@@ -112,11 +114,13 @@ nav {
   .skill {
     position: relative;
     margin-bottom: 20px;
+    
   }
   
   .skill-title {
     font-size: 18px;
     margin-bottom: 10px;
+    
   }
   
   .skill-bar {
