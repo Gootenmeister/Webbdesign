@@ -13,11 +13,17 @@
         <h1>&nbsp;&gt;&nbsp;Gustav's page<span class="blink">_</span></h1>
     </header>
     <main class="root">
+    <div id="app">
         <div id="home">
             <h2>Hej! Gustav var namnet!</h2>
             <p>jag är x, jag gör y saker och ibland också z!</p>
             <img id="pfp" src="pfp.jpg" alt="bild på gust">
         </div>  
+        <div>
+            <p>{{ message }}</p>
+        <button @click="reverseMessage">Vänd texten</button>
+        </div>
+    </div>
         <div id="about">
             <h1 id="skills">Skills</h1>
     <div id="skillbars" class="hidden">

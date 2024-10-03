@@ -28,3 +28,20 @@ document.getElementById('skills').addEventListener('click', function() {
         });
     }
 });
+
+
+// VUE
+const app = Vue.createApp({
+    data() {
+        return {
+            message: 'Hej Vue!'
+        };
+    },
+    methods: {
+        reverseMessage() {
+            this.message = this.message.split('').reverse().join('');
+        }
+    }
+});
+
+app.mount('#app');
