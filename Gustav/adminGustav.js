@@ -18,7 +18,7 @@ function nextImage() {
 function previousImage() {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = images.length - 1; // Om vi går under noll, gå till sista bilden
+        currentIndex = images.length - 1; //om under 0, gå till sista med högsta index
     }
     showImage(currentIndex);
 }
@@ -71,11 +71,11 @@ const app = Vue.createApp({
       }
     },
     created() {
-      // Hämta JSON-fil när komponenten skapas
-      fetch('gustavProj.json') // Uppdatera sökvägen om det behövs
+
+      fetch('gustavProj.json') //fetch och fil-dir
         .then(response => response.json())
         .then(data => {
-          this.projects = data; // Spara JSON-datan i projects-arrayen
+          this.projects = data; //lägg datan i projects arr
         })
         .catch(err => console.error('json err:', err));
     },
