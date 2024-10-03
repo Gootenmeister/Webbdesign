@@ -5,7 +5,7 @@ const totalabilder = bilder.length;
 
 // min funktion för att visa en bild baserat på index
 function visaBild(index) {
-    // Döljer alla bilder
+    // döljer alla bilder
     for (let i = 0; i < totalabilder; i++) {
         bilder[i].style.display = 'none';
     }
