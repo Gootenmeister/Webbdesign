@@ -123,21 +123,15 @@
               <h2>Beräkna Momsen</h2>
               <p>Med hjälp av verktyget Beräkna Momsen kan användare enkelt beräkna slutpriset inklusive moms. Genom att ange priset utan moms och välja önskad momssats, kan verktyget snabbt och exakt visa det totala priset.</p>
               <form>
-                <div class="form-group">
                   <label for="pris">Pris (utan moms)</label>
-                  <input type="number" id="pris" v-model="pris" class="form-control">
-                </div>
-                <div class="form-group">
+                  <input type="number" id="pris" v-model="pris" >
                   <label for="moms">Moms (%)</label>
-                  <select id="moms" v-model="moms" class="form-control">
+                  <select id="moms" v-model="moms">
                     <option v-for="momsOption in momsOptions" :value="momsOption.value">{{ momsOption.text }}</option>
                   </select>
-                </div>
-                <div class="form-group">
                   <label for="slutpris">Slutpris</label>
-                  <input type="number" id="slutpris" v-model="slutpris" class="form-control">
-                </div>
-                <button type="button" @click="berakna()" class="btn btn-primary">Beräkna</button>
+                  <input type="number" id="slutpris" v-model="slutpris" >
+                <button type="button" @click="berakna()">Beräkna</button>
               </form>
             </div>
           
@@ -212,7 +206,7 @@
           </div>
           </div>
           <footer>
-            <form a="/index.html">
+            <form action="/index.html">
                 <button>Tillbaka</button>
             </form>
         </footer>

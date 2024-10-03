@@ -17,3 +17,416 @@ body {
     background-color: #323232;
     box-shadow: 0 0 10px #0000001a;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 90px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #f1c40f;
+  margin: 5px 0;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  background-color: #f1c40f;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  background-color: #ddd;
+}
+
+#minBild{
+  height: 250px;
+  border-radius:10% 50%;
+  width: 25%;
+  float: left;
+  padding: 15px;
+}
+
+#omMig{
+  padding-top: 20px;
+  width: 65%;
+  float: right;
+  padding: 15px;
+  text-align: justify;
+ 
+ }
+
+
+.skills-area {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    width: 100%;
+    
+  }
+  
+  .skill {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .skill-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    position: absolute;
+    width: 100%;
+    background: white;
+    height: 20px;
+    z-index: -1;
+    border-radius: 100px;
+    
+  }
+  
+  .skill-fill {
+    background: rgb(96, 96, 216);
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    overflow: hidden;
+    
+  }
+  
+  .skill-procent {
+    font-size: 20px;
+  }
+  
+  .Revisor {
+    animation: Revisor 2s;
+    width: 85%;
+}
+
+.affarsjuridik {
+    animation: affarsjuridik 2s;
+    width: 63%;
+}
+
+.ek_radgivning {
+    animation: ek_radgivning 2s;
+    width: 70%;
+}
+
+.projektledning {
+    animation: projektledning 2s;
+    width: 85%;
+}
+
+@keyframes Revisor {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+@keyframes affarsjuridik {
+    from {
+        width: 0;
+    }
+    to {
+        width: 63%;
+    }
+}
+
+@keyframes ek_radgivning {
+    from {
+        width: 0;
+    }
+    to {
+        width: 70%;
+    }
+}
+
+@keyframes projektledning {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
+    }
+}
+
+  .slider{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+}
+
+.slider .image{
+    display: none;
+}
+
+.slider .image img{
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 15px;
+   
+    backdrop-filter: blur(20px);
+}
+
+.slider .button{
+    position: absolute;
+    top: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.slider .button a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+   
+}
+
+.slider .button .prev{
+    border-radius: 0 5px 5px 0;
+}
+
+.slider .button .next{
+    border-radius: 5px 0 0 5px;
+}
+
+.dots{
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+    left: 35%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.dot{
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #bbb;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.active, .dot:hover{
+    background: yellow;
+}
+
+.minaProjeckt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.minaProjeckt > div {
+  flex-basis: 48%;
+  margin: 10px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+
+.form,.ekonomiskaData,.vader,.fakturor,.uppdateraPris {
+  margin: 20px;
+  gap: 20px;
+
+}
+
+.fel-meddelande,.fel-meddelande2{
+  color: red;
+}
+
+.form, .ekonomiskaData, .vader, .fakturor, .uppdateraPris {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+h2, h1 {
+  color: #f1c40f;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: -10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #f1c40f;
+  color: #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding:10px;
+  
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+.fel-meddelande, .fel-meddelande2 {
+  color: #e74c3c;
+}
+#fakturaTabel,#produktTabel{
+  border: 1px dotted #ddd;
+  padding: 8px;
+  width: 100%;
+}
+#fakturaTabel  tr:nth-child(even){background-color: #302e2e;}
+#produktTabel  tr:nth-child(even){background-color: #302e2e;}
+#fakturaTabel tr:hover {background-color: #424033;}
+#produktTabel tr:hover {background-color: #424033;}
+
+#tillbaka button{
+  padding: 10px;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; 
+      align-items: center; 
+  }
+#minBild{
+  width: 70%; 
+}
+#omMig{
+  width: 100%;
+  text-align: justify;
+ 
+}
+  .slider {
+      width: 100%; 
+  }
+
+  .skills-area {
+      width: 100%; 
+      margin-top: 20px; 
+}
+.minaProjeckt > div {
+  flex-basis: 100%;
+}
+nav {
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.burger-menu {
+  display: block;
+  align-self: flex-end;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 20%;
+  padding: 10px 0;
+}
+
+.menu.active1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menu li {
+  text-align: right;
+  width: 100%;
+  background-color: #302e2e;
+}
+
+.menu li a {
+  color: black;
+  background-color: #f1c40f;
+  border-radius: 10px;
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu li a:hover {
+  background-color: #555;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .skills-area {
+      padding: 0 5%; 
+}
+}
+
