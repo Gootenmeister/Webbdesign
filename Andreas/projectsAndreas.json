@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "titel": "Lanseringskampanj för ny datorprodukt",
+      "beskrivning": "Ansvarade för att skapa och driva en lanseringskampanj för företagets senaste bärbara dator, vilket inkluderade sociala medier, annonsering och events."
+    },
+    {
+      "id": 2,
+      "titel": "SEO-optimering för företagets webbplats",
+      "beskrivning": "Genomförde en fullständig SEO-optimering av företagets webbplats, vilket ledde till en ökning av organisk trafik med 30%."
+    },
+    {
+      "id": 3,
+      "titel": "Sociala mediekampanjer",
+      "beskrivning": "Skapade och hanterade sociala mediekampanjer för att öka varumärkeskännedom och engagemang på plattformar som Facebook och Instagram."
+    },
+    {
+      "id": 4,
+      "titel": "E-postmarknadsföring för produktuppdateringar",
+      "beskrivning": "Utvecklade och skickade riktade e-postkampanjer till befintliga kunder för att informera om produktuppdateringar och specialerbjudanden."
+    },
+    {
+      "id": 5,
+      "titel": "Partnerskap med influencers",
+      "beskrivning": "Samarbetade med tekniska influencers för att marknadsföra företagets produkter till en bredare publik och skapa trovärdighet inom branschen."
+    }
+  ]

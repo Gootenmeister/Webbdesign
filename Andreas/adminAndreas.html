@@ -1,14 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="adminAndreas.js" defer></script>
     <link rel="stylesheet" href="adminAndreas.css">
     <title>Andreas sida</title>
 </head>
 <body>
-    <h1>Title</h1>
+    <div class="root">
+        <img src="bilderna/logo.png" alt="Logo" class="logo2">
+        <div class="grid-container">
+            <h1 class="grid-item item1">Andreas</h1>
+            <div class="grid-item item2">
+                <img src="bilderna/Andreas1.jpg" alt="Profilbild" class="logo1">
+            </div>
+            <div class="grid-item item3">
+                <div class="bildspel-container">
+                    <div class="bilder">
+                        <img src="bilderna/Andreas4.jpg" alt="Andreas på kontoret" class="bildspels-bild">
+                        <img src="bilderna/Andreas2.jpg" alt="Andreas dricker kaffe" class="bildspels-bild">
+                        <img src="bilderna/Andreas3.jpg" alt="Andreas lagar mat" class="bildspels-bild">
+                    </div>
+                    <button id="bakåt" class="bildspels-knapp">◀</button>
+                    <button id="nästa" class="bildspels-knapp">▶</button>
+                </div>
+            </div>
+            <div class="grid-item item4">
+                <p>Hej!</p>
+                <p>Jag heter Andreas och jag är marknadsföringsansvarig på GRAK, ett innovativt IT-företag som specialiserar sig på att leverera skräddarsydda teknologilösningar för våra kunder. Med en bakgrund inom digital marknadsföring och en passion för teknik strävar jag efter att lyfta fram GRAK
+                    unika erbjudanden och bygga starka relationer med våra kunder.</p>
+                <p>I min roll på GRAK fokuserar jag på att utveckla och implementera strategier för att nå ut till nya marknader och stärka vårt varumärke. Genom att kombinera kreativitet med datadrivna insikter arbetar jag för att maximera vår synlighet och engagemang på olika plattformar. Jag tror starkt på vikten av att förstå våra kunders behov och anpassa våra budskap för att skapa mervärde.</p>
+                <p>På GRAK är vi inte bara ett IT-företag; vi är en partner som hjälper våra kunder att navigera i den digitala världen. Jag är stolt över att få vara en del av detta team och ser fram emot att fortsätta vår resa mot att göra teknik tillgänglig och begriplig för alla.</p>
+                <p>På min fritid älskar jag att laga mat och avnjuta goda drycker.</p>
+            </div>
+            <div class="grid-item item5" id="app">
+                <h2>Mina projekt</h2>
+                <ul>
+                    <li v-for="projekt in projektlista" :key="projekt.id">
+                        <h4>{{ projekt.titel }}</h4>
+                        <p>{{ projekt.beskrivning }}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
