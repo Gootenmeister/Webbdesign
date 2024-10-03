@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Byggde supportsidan för GRAK Gaming!",
+        "description": "Ett av de mest nyligen utförda projekten jag gjort är supportsidan för GRAK-gaming AB, och är skrivet i diverse språk och kan hittas på sidan {sida} ",
+        "languages": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+        "name": "asdpasdpap",
+        "description": "Beskrivning av projekt 2.",
+        "languages": ["Bajs", "Fnask"]
+    },
+    {
+        "name": "Prime Sieve Algoritm i C (Eratosthenes Såll)",
+        "description": "Efter en lång diskussion med en vän kom vi fram till att skapa en algoritm för att lista och sortera primtal i storleksordning. Jag hittade Eratosthenes Primtalssåll efter en google-sökning och bestämde mig att göra ett väloptimerat C-program då jag hade hört att det var snabbare efter kompileringstid i ''low level'' språk än tolkade språk.",
+        "languages": ["C"]
+    },
+    {
+        "name": "Projekt4",
+        "description": "Beskrivning av projekt 4.",
+        "languages": ["Ruby", "Rails"]
+    },
+    {
+        "name": "Projekt5",
+        "description": "Beskrivning av projekt 5.",
+        "languages": ["PHP", "Laravel"]
+    }
+]
