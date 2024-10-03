@@ -1,8 +1,10 @@
+//<menyblocks>
 function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.classList.toggle("active");
 }
 
+//vi behöver inte ha DOMContentLoaded då vi har defer i html
 document.addEventListener("DOMContentLoaded", function() {
     let images = document.querySelectorAll(".selfLinkImage");
     images.forEach(function(image) {
@@ -11,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+//</menyblocks>
 
-
-//sökblocket har tagit bort alla anadra comments
+//häftig js DOM-söktool ;)
 document.getElementById('searchButton').addEventListener('click', performSearch);
 document.getElementById('searchInput').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -24,7 +26,7 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 function performSearch() {
     const input = document.getElementById('searchInput').value.trim();
 
-    const invalidInputs = [".", "/", ">", "<", "\""];
+    const invalidInputs = [".", "/", ">", "<", "\""]; //<-- har sönder sökkoden så måste deklarera dessa :3
 
     if (invalidInputs.includes(input)) {
         alert("Ange ett giltigt sökord");
@@ -37,12 +39,14 @@ function performSearch() {
 
     const regExp = new RegExp(`(${input})`, 'gi');
 
+    //tar bort tidigare highlight om det finns!
     removeHighlights();
 
+    //sidan scrollar smooth till firstHit (den första sökträffen) om det blivit en träff
+    //älskar booleans för att kolla conditions =)
     let firstHit = false;
-    let matchFound = false;
 
-    //för all list text 
+    //för all listItem-text loop
     const listItems = document.getElementsByTagName('li');
     for (let li of listItems) {
         if (regExp.test(li.innerHTML)) {
@@ -51,11 +55,10 @@ function performSearch() {
                 li.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 firstHit = true;
             }
-            matchFound = true;
         }
     }
 
-    //pTag loop
+    //för all pTag-text loop
     const paragraphs = document.getElementsByTagName('p');
     for (let p of paragraphs) {
         if (regExp.test(p.innerHTML)) {
@@ -64,16 +67,16 @@ function performSearch() {
                 p.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 firstHit = true;
             }
-            matchFound = true;
         }
     }
-
-    if (!matchFound) {
+    
+    if (!firstHit) {
         alert("Inga resultat hittades för din sökning.");
     }
 }
 
-//func för att ta bort <span class="highlight"> utan att påverka textN
+//tar bort <span class="highlight"> utan att påverka texten
+//anropas vid ny sökning rad 43
 function removeHighlights() {
     const highlightedElements = document.querySelectorAll('.highlight');
     highlightedElements.forEach(element => {
@@ -81,14 +84,7 @@ function removeHighlights() {
     });
 }
 
-// Ladda imagemap-resizer från ett CDN
-const script = document.createElement('script');
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js";
-document.head.appendChild(script);
-
-// Initiera imageMapResizer när dokumentet är färdigladdat
-document.addEventListener('DOMContentLoaded', function() {
-  script.onload = function() {
-    imageMapResize(); // Anpassar imagemap när bildstorleken ändras
-  };
-});
+//anpassar imagemap när bilden ändras - så länge defer är kvar i <script> :p
+if (typeof imageMapResize === 'function') {
+    imageMapResize();
+}
