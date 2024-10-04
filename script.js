@@ -74,15 +74,15 @@ function removeHighlights() {
     });
 }
 
-//anpassar imagemap när bilden ändras - så länge defer är kvar i <script> :p
-const script = document.createElement('script');
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js";
-script.onload = function() {
-    if (typeof imageMapResize === 'function') {
-        imageMapResize(); // Anpassar imagemap när bildstorleken ändras
-    }
-};
-document.head.appendChild(script);
+// //anpassar imagemap när bilden ändras - så länge defer är kvar i <script> :p
+// const script = document.createElement('script');
+// script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js";
+// script.onload = function() {
+//     if (typeof imageMapResize === 'function') {
+//         imageMapResize(); // Anpassar imagemap när bildstorleken ändras
+//     }
+// };
+// document.head.appendChild(script);
 
 // länkar bilderna till sig sjläv
 document.addEventListener("DOMContentLoaded", function() {
