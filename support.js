@@ -1,4 +1,3 @@
-// bool-poolen - satte till bool ist för 1 och 0 då boolean-värden endast är en bit istället för 32
 // kollar om vi kan skicka formuläret
 let namecheck = 0;
 let emailcheck = 0;
@@ -72,5 +71,4 @@ document.getElementById('contactFormSend').addEventListener('click', function() 
     } else {
         alert('Gör klart formuläret!');
     }
-
 });

@@ -18,7 +18,7 @@ function nextImage() {
 function previousImage() {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = images.length - 1; //om under 0, gå till sista med högsta index
+        currentIndex = images.length - 1; //out of bounds - gå till sista med högsta index
     }
     showImage(currentIndex);
 }
@@ -27,7 +27,7 @@ function previousImage() {
 //SKILLBARS
 document.getElementById('skills').addEventListener('click', function() {
     const skillbars = document.getElementById('skillbars');
-    skillbars.classList.toggle('hidden'); //classtoggle Hidden (skulle kunnat gjort show)
+    skillbars.classList.toggle('hidden'); //classtoggle .hidden
 
     const skillbarFills = document.querySelectorAll('.skillbar-fill');
     const skillbarTitles = document.querySelectorAll('.skillbar-title');
@@ -37,7 +37,6 @@ document.getElementById('skills').addEventListener('click', function() {
             skillbarTitle.style.opacity = '1'; 
         });
         
-            //hol up
         setTimeout(() => {
             const widths = ['87%', '80%', '73%', '71%']; //vals
             skillbarFills.forEach((skillbarFill, index) => {
@@ -72,10 +71,10 @@ const app = Vue.createApp({
     },
     created() {
 
-      fetch('gustavProj.json') //fetch och fil-dir
+      fetch('gustavProj.json')
         .then(response => response.json())
         .then(data => {
-          this.projects = data; //lägg datan i projects arr
+          this.projects = data; //lägg instansierade datan i projects arr
         })
         .catch(err => console.error('json err:', err));
     },
@@ -89,12 +88,10 @@ const app = Vue.createApp({
         }
       },
       clearFilters() {
-        this.filterLanguages = []; //sätt tom filterarray när metoden anropas
+        this.filterLanguages = []; //sätt tom filtarr när metoden anropas
       }
     },
   
   });
-  //todo använd push, include, som
-
 
   app.mount('#app');
