@@ -108,7 +108,7 @@ a:hover {
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: wrap;
+    
 }
 
 .about-me h3 {
@@ -189,23 +189,36 @@ a:hover {
 
 /* Projekt */
 .projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
+    position: center;
     width: 100%;
     max-width: 1200px;
     background-color: #323232;
     box-shadow: 0 0 10px #00000050;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.projects-title{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    margin: 10px;
+    padding: 10px;
+    z-index: 1;
 }
 
 .project-item {
-    width: 100%;
+    width: 90%;
     border: 1px solid #ccc;
     background-color: #555555;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
     box-shadow: 0 0 10px #00000050;
     box-sizing: border-box;
@@ -238,6 +251,12 @@ a:hover {
     color: darkgrey;
 }
 
+@media (min-width: 1000px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 @media (min-width: 600px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
@@ -252,13 +271,7 @@ a:hover {
     }
 }
 
-@media (min-width: 1000px) {
-    .projects-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .about-container {
         flex-direction: column;
         align-items: center;
@@ -281,7 +294,7 @@ a:hover {
     align-items: center;
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    max-width: 800px;
     flex-direction: column;
     align-items: center;
     background-color: #323232;
@@ -301,7 +314,7 @@ a:hover {
 .picture-btns {
     position: absolute;
     top: 55%;
-    width: 30%;
+    width: 50%;
     transform: translateY(-50%);
     display: flex;
     justify-content: space-between;
@@ -324,7 +337,7 @@ a:hover {
     background-color: #9f9f9f;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .picture-container {
         .picture-btns{
             top: 60%;

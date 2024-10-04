@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 
         <div class="banner">
 
-            <img src="../bilder/sddefault.png" class="banner-img">
+            <img src="../bilder/sddefault.png" class="banner-img" alt="Banner">
 
             <div class="banner-text">
                 <h1>Välkommen till min sida!</h1>
@@ -92,21 +92,6 @@
 
         <br>
 
-        <div class="projects-container">
-            <h3>Tidigare projekt:</h3>
-        
-            <div id="projects-app">
-                <div class="project-item" v-for="project in projectList" :key="project.name">
-                    <h3 class="project-title">Titel: {{ project.name }}</h3>
-                    <p class="project-type">Typ: {{ project.type }}</p>
-                    <p class="project-description">Beskrivning: {{ project.description }}</p>
-                    <p class="project-date">Datum: {{ project.date }}</p>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
         <div class="picture-container">
             <h3>Bildspel</h3>
 
@@ -116,6 +101,23 @@
                 <button id="prev-btn">←</button>
                 <button id="next-btn">→</button>
             </div>
+        </div>
+
+        <br>
+
+        <div class="projects-container">
+            <h3 class="projects-title">Tidigare projekt:</h3>
+        
+            <br>
+
+                <div id="projects-app">
+                    <div class="project-item" v-for="project in projectList" :key="project.name">
+                        <h3 class="project-title">Titel: {{ project.name }}</h3>
+                        <p class="project-type">Typ: {{ project.type }}</p>
+                        <p class="project-description">Beskrivning: {{ project.description }}</p>
+                        <p class="project-date">Datum: {{ project.date }}</p>
+                    </div>
+                </div>
         </div>
 
     </div>
