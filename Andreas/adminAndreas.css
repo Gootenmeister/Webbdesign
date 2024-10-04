@@ -74,20 +74,17 @@ body {
     margin-bottom: 40px;
 }
 
-/* håller ihop mitt bildspel, möjliggör så knappar hamnar rätt*/
 .bildspel-container {
     position: relative;
     text-align: center;
 }
 
-/* hjälper till att hur mina bilder placeras i relation med varann*/
 .bilder {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*kan här skapa ett utseende för själva bildspelet*/
 .bildspels-bild {
     width: 100%;
     max-width: 450px;
@@ -135,10 +132,6 @@ body {
 
 #nästa {
     right: 10px;
-}
-
-#footer p {
-    font-style: italic;
 }
 
 .logo1 {
