@@ -18,7 +18,7 @@ function nextImage() {
 function previousImage() {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = images.length - 1; //om under 0, gå till sista med högsta index
+        currentIndex = images.length - 1; //out of bounds - gå till sista med högsta index
     }
     showImage(currentIndex);
 }
@@ -27,7 +27,7 @@ function previousImage() {
 //SKILLBARS
 document.getElementById('skills').addEventListener('click', function() {
     const skillbars = document.getElementById('skillbars');
-    skillbars.classList.toggle('hidden'); //classtoggle Hidden (skulle kunnat gjort show)
+    skillbars.classList.toggle('hidden'); //classtoggle .hidden
 
     const skillbarFills = document.querySelectorAll('.skillbar-fill');
     const skillbarTitles = document.querySelectorAll('.skillbar-title');
