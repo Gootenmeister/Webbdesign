@@ -1,4 +1,3 @@
-/* Generellt utseende */
 body {
     background-color: rgb(50, 50, 50);
     color: #ffffff;
@@ -18,7 +17,6 @@ body {
     box-shadow: 0 0 10px #0000001a;
 }
 
-/* samlar o strukturerar grid items*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
