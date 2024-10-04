@@ -82,7 +82,7 @@
           <button class="fltrBtn" @click="clearFilters">Rensa filter</button>
         </div>
   
-        <!-- visar de filtrerade projekten -->
+        <!-- visar  filtrerade projekt -->
         <div v-for="project in filteredProjects" :key="project.name">
           <h3>{{ project.name }}</h3>
           <p>{{ project.description }}</p>
