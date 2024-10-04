@@ -16,7 +16,7 @@ document.getElementById('searchInput').addEventListener('keydown', function(even
 function performSearch() {
     const input = document.getElementById('searchInput').value.trim();
 
-    const invalidInputs = [".", "/", ">", "<", "\""]; //<-- har sönder sökkoden så måste deklarera dessa :3
+    const invalidInputs = [".", "/", ">", "<", "\""]; //<-- har sönder sökkoden så måste deklarera dessa =)
 
     if (invalidInputs.includes(input)) {
         alert("Ange ett giltigt sökord");
@@ -33,7 +33,6 @@ function performSearch() {
     removeHighlights();
 
     //sidan scrollar smooth till firstHit (den första sökträffen) om det blivit en träff
-    //älskar booleans för att kolla conditions =)
     let firstHit = false;
 
     //för all listItem-text loop
@@ -74,17 +73,7 @@ function removeHighlights() {
     });
 }
 
-// //anpassar imagemap när bilden ändras - så länge defer är kvar i <script> :p
-// const script = document.createElement('script');
-// script.src = "https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js";
-// script.onload = function() {
-//     if (typeof imageMapResize === 'function') {
-//         imageMapResize(); // Anpassar imagemap när bildstorleken ändras
-//     }
-// };
-// document.head.appendChild(script);
-
-// länkar bilderna till sig sjläv
+//länkar bilderna till sig sjläv
 document.addEventListener("DOMContentLoaded", function() {
     let images = document.querySelectorAll(".selfLinkImage");
     images.forEach(function(image) {
